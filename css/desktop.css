@@ -75,8 +75,12 @@
         column-gap: 2rem;
         cursor: pointer;
         width: 800px;
+        transition: width 1s;
 
      }
+     .foto-inicio-descarga:hover{
+        width: 200px;
+    }
      .inicio-1{
          grid-template-columns: 30% auto;
          grid-template-rows: repeat(2, 1fr);
