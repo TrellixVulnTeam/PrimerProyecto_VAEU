@@ -156,33 +156,25 @@ header{
 
 @media(min-width:320px){
     header{
-        grid-template-columns: auto;
-        grid-template-rows:1fr 1fr;
-        row-gap: 10px;
+        grid-template-columns: auto auto;
+        grid-template-rows:auto auto;
         grid-template-areas: "header-icon" "nav";
-        justify-items: center;
         background-color: var(--white);
-        height: 8rem;
+        height: 5rem;
         position: fixed;
         width: 100%;
         z-index: 1;
         top: 0;
-
-        
-        
-        
+  
     }
-
     .logo{
-        width: 13rem;
-        margin-top: 10px;
+        width: 10rem;
+        padding-top: 1rem;
     }
-
     .burgermenu{
-        width: 2.5rem;
-        margin-left: 3rem;
-        margin-top: 2rem;
-        cursor: pointer;
+        width: 3rem;
+        padding-top: 1rem;
+        margin-left: 9rem;
     }
     .menu{
         grid-template-columns: repeat(6,auto);
@@ -196,6 +188,7 @@ header{
         list-style: none;
         margin-left: 1rem;
      }
+
      
     .inicio{
         background-color: var(--white);
@@ -222,9 +215,8 @@ header{
          font-size: 3.3rem;
          color: var(--white);
          margin-bottom: 2rem;
-         margin-left: 2rem;
          margin-top: 5rem;
-         font-weight: 500;
+         font-weight:400;
      }
      .inicio-textos p {
         display: none;
@@ -232,36 +224,31 @@ header{
      .inicio h4, .inicio h5{
          font-size: 1.4rem;
          color: white;
-         margin-left: 6rem;
-     }
-     .inicio h5{
-         margin-left: 7rem;
+         font-weight: 200;
      }
      
    .foto-inicio-descarga{
        flex-direction: column;
        position: absolute;
        margin-top: 26rem;
-       justify-self: center;
    }
    .foto-inicio-descarga img{
        width: 20rem;
        margin-bottom: 3rem;
    }
    .foto-inicio-mobile{
-       width: 26rem;
-       margin-top: 7rem;
-       justify-self: center;
+       width: 30rem;
+       margin-top: 4rem;
    }
 
    .funciones{
-       margin-top: 25rem;
+       margin-top: 35rem;
        
    }
    .funciones h3{
        font-size: 3rem;
        color: var(--black);
-       margin-left: 3rem;
+       font-weight: 300;
    }
    .funciones-foto{
        width: 300px;
@@ -270,7 +257,6 @@ header{
    }
    .funciones-foto img{
     width: 15rem;
-    margin-left: 3rem;
    }
    .funciones-foto-1 img{
        width: 11rem;
@@ -278,18 +264,17 @@ header{
    }
    .funciones-foto-1,.funciones-foto-2, .funciones-foto-3, .funciones-foto-4, .funciones-foto-5{
        margin-top: 6rem;
-       margin-left: 3rem;
        box-shadow: 4px 8px 8px var(--middlewhite);
        border-radius: 10px;
    }
    .funciones-foto h5{
        font-size: 2.5rem;
        font-weight: bold;
-       margin-left: 3rem;
    }
    .funciones-foto p{
        font-size: 1.5rem;
-       opacity: 0.88;
+       opacity: 0.86;
+       font-weight: 400;
 
    }
 
@@ -299,13 +284,10 @@ header{
     margin-top: 5rem;
    }
    .tarjeta h3{
-       justify-self: center;
        font-size: 3rem;
-    
    }
    .tarjeta h5{
        font-size: 2rem;
-       margin-left: 7rem;
    }
    .container{
        margin-top: 4rem;
@@ -337,10 +319,10 @@ header{
        width: 25rem;
    }
    .paso1 p, .paso2 p, .paso3 p {
-       margin-left: 5rem;
        font-size: 2.5rem;
        margin-top: 7rem;
        color: var(--violet);
+       font-weight: 400;
     
    }
    .adelante, .atras{
@@ -393,7 +375,6 @@ header{
    .container-2-foto-1 p, .container-2-foto-2 p{
        color: var(--violet);
        font-size: 1.7rem;
-       margin: auto 4rem;
    }
    .container-2-foto img {
        width: 30rem;
@@ -413,13 +394,12 @@ header{
        padding-top: 5rem;
    }
    .beneficiosypromociones h4{
-       margin-left: 3rem;
        padding-top: 2rem;
        font-size: 4rem;
    }
    .beneficiosypromociones p {
        padding-top: 2rem;
-       margin-left: 3rem;
+      
        font-size: 2.4rem;
    }
    .promocion-foto img {
@@ -452,26 +432,26 @@ header{
        margin-bottom: 6rem;
    }
    .fotos-bene figure .capa{
-    position: absolute;
-    top:0%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.60);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-    }
-    .fotos-bene figure:hover > .capa {
-    opacity: 1;
-    visibility: visible;
-    }
-    .capa h5{
-    font-size: 1.5rem;
-    color: var(--black);
-    font-weight: 400;
-    }
-  
+       position: absolute;
+       top:0%;
+       width: 100%;
+       height: 100%;
+       background: rgba(255, 255, 255, 0.60);
+       transition: all 500ms ease-out;
+       opacity: 0;
+       visibility: hidden;
+       text-align: center;
+   }
+   .fotos-bene figure:hover > .capa {
+       opacity: 1;
+       visibility: visible;
+   }
+   .capa h5{
+       font-size: 1.5rem;
+       color: var(--black);
+       font-weight: 400;
+       
+   }
    .capa button{
        border-radius: 2px;
        background-color: var(--middlewhite);
@@ -615,7 +595,6 @@ header{
 .inversionescripto-2 h3{
     font-size: 3rem;
     margin-top: 2rem;
-    margin-left: 2rem;
 }
 .foto-cripto{
     display: flex;
@@ -629,7 +608,6 @@ header{
     background-color: var(--white);
     border-radius: 2rem;
     display: flex;
-    align-items: center;
     flex-direction: column;
     box-shadow: 10px 15px 15px var(--middlewhite);
 
@@ -646,7 +624,6 @@ header{
 .foto-cripto-1 p, .foto-cripto-2 p, .foto-cripto-3 p, .foto-cripto-4 p {
     font-size: 12px;
     opacity: 0.85;
-    margin-left: 1rem;
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
@@ -665,12 +642,12 @@ header{
 }
 .inversionescripto-3 ul li{
     font-size: 1.8rem;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 .foto-cripto-6 {
     width: 30rem;
     padding-top: 3rem;
-    margin: 5px 5px;
+    margin: 5px auto;
     margin-bottom: 10rem;
 }
 
@@ -688,13 +665,12 @@ header{
 .canalesdecontacto h5{
     font-size: 1.5rem;
     padding-top: 1rem;
-    margin-left: 5px;
 }
 .canalesdecontacto p{
     font-size: 1.2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    margin-left: 5px;
+    font-weight: 300;
 }
 .formulario form{
     width: 20rem;
@@ -702,6 +678,7 @@ header{
 }
 .formulario label{
     font-size: 1.5rem;
+    font-weight: 400;
 }
 .formulario input{
    border: 3px solid var(--middlewhite);
@@ -758,7 +735,6 @@ header{
 }
 .fotos-footer img {
     margin-bottom: 1.5rem;
-    cursor: pointer;
 }
 
 
