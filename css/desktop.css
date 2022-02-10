@@ -12,7 +12,10 @@
 
 @media(min-width:1024px){
     header{
-        height: 10rem;
+        height: 7rem;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "header-icon" "nav";
     }
 
     .logo{
@@ -24,24 +27,23 @@
     .menu{
         list-style: none;
         display: grid;
-        
+        grid-template-columns: repeat(6,auto);
+        column-gap: 15px;
+        margin-top: 3rem;        
     }
     .menu li{
         margin-right: 1.3rem;
         margin-bottom: 5rem;
-
-    
+        
      }
      
      .menu li a {
-         font-weight: 500;
+         font-weight: 400;
          text-decoration: none;
          color: var(--black);
          font-size: 1.6rem;
          transition: all 0.4s linear;
-
-         
-         
+         transition: font-size 0.5s;
          
      }
       
@@ -49,66 +51,61 @@
         background-color: var(--softviolet);
         opacity: 0.8;
     }
+    .menu li a:hover{
+        font-size: 2rem;
+    }
     .main-button{
         width: 15rem;
-        height: 2rem;
-        color: var(--black);
-        cursor: pointer;
-        background-color: var(--white);
-        border: 1px solid var(--darkpink);
-     
-     }
-     .foto-inicio-desktop{
-         display: flex;
-     }
-     .foto-inicio-mobile{
-         display: none;
-     }
-     .inicio-1{
-         height: 1000px;
-     }
-     .foto-inicio-descarga{
-        grid-template-columns: repeat(3,1fr);
+        font-size: 1rem;
+        font-weight: 400;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+    }
+    .inicio-1{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "foto-inicio-mobile" "inicio-textos" ".""foto-inicio-descarga";
+    
+    }
+    .foto-inicio-mobile {
+        width: 60rem;    
+        margin-top: 15rem;
+    }
+    .inicio-textos h1 {
+        font-size: 7rem;
+        margin-top: 20rem;
+        font-weight: 500;
+    }
+    .inicio-textos p {
+        font-size: 3.3rem;
+        margin-top: 5rem;
+        font-weight: 400;
+        display: block;
+        width: 600px;
+        color: var(--white);
+        margin-left: 15rem;
+    }
+
+    .inicio h4, .inicio h5{
+        display: none;
+    }
+    .foto-inicio-descarga{
+        grid-template-columns: repeat(3,auto);
         top: 40rem;
         justify-content: center;
-        margin-left: 55rem;
-        column-gap: 2rem;
+        column-gap: 5px;
         cursor: pointer;
-        width: 800px;
-        transition: width 1s;
+        right: 16rem;
 
      }
-     .foto-inicio-descarga:hover{
-        width: 200px;
+     .foto-inicio-descarga img{
+        transition: width 1s;
+     }
+     .foto-inicio-descarga img:hover{
+        width: 300px;
     }
-     .inicio-1{
-         grid-template-columns: 30% auto;
-         grid-template-rows: repeat(2, 1fr);
-         grid-template-areas: "foto-inicio-desktop" "inicio-textos" "foto-inicio-descarga";
-         justify-content: flex-start;
-         column-gap: 30px;
-     }
-     .inicio-1 h1{
-         justify-self: center;
-         margin-top: 27rem;
-         margin-left: 20rem;
-         font-size: 7rem;
-     }
-     .inicio-textos p{
-         display: flex;
-         font-size: 3rem;
-         color: var(--white);
-         width: 600px;
-         margin-left: 25rem;
-     }
-     .inicio-textos h4, .inicio-textos h5{
-         display: none
-     }
-     .foto-inicio-desktop img{
-        width: 25rem;
-        position: relative;
-        margin-top: 15rem;
-     }
+    
+
 
      .funciones{
          background-image: linear-gradient(white, #780ca3);

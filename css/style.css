@@ -177,12 +177,7 @@ header{
         margin-left: 9rem;
     }
     .menu{
-        grid-template-columns: repeat(6,auto);
-        grid-template-rows: auto;
-        column-gap: 15px;
-        justify-items: center;
         display: none;
-        
     }
     .menu li{
         list-style: none;
@@ -194,9 +189,6 @@ header{
         background-color: var(--white);
         background-image: linear-gradient(#6409ab,#780ca3,violet, white)
     }
-     .foto-inicio-desktop{
-         display: none;
-     }
      .inicio-1{
          grid-template-columns: auto;
          grid-template-rows: 40% auto 30%;
