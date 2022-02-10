@@ -1,0 +1,446 @@
+.rueda-main h5{
+    grid-area: rueda-main-h5;
+}
+.rueda-main h3{
+    grid-area: rueda-main-h3;
+}
+.rueda-main-foto{
+    grid-area: rueda-main-foto;
+}
+
+
+
+@media(min-width:1024px){
+    header{
+        height: 10rem;
+    }
+
+    .logo{
+        width: 15rem;
+    }
+    .burgermenu{
+        display: none;
+    }
+    .menu{
+        list-style: none;
+        display: grid;
+        
+    }
+    .menu li{
+        margin-right: 1.3rem;
+        margin-bottom: 5rem;
+
+    
+     }
+     
+     .menu li a {
+         font-weight: 500;
+         text-decoration: none;
+         color: var(--black);
+         font-size: 1.6rem;
+         transition: all 0.4s linear;
+
+         
+         
+         
+     }
+      
+    a:hover {
+        background-color: var(--softviolet);
+        opacity: 0.8;
+    }
+    .main-button{
+        width: 15rem;
+        height: 2rem;
+        color: var(--black);
+        cursor: pointer;
+        background-color: var(--white);
+        border: 1px solid var(--darkpink);
+     
+     }
+     .foto-inicio-desktop{
+         display: flex;
+     }
+     .foto-inicio-mobile{
+         display: none;
+     }
+     .inicio-1{
+         height: 1000px;
+     }
+     .foto-inicio-descarga{
+        grid-template-columns: repeat(3,1fr);
+        top: 40rem;
+        justify-content: center;
+        margin-left: 55rem;
+        column-gap: 2rem;
+        cursor: pointer;
+        width: 800px;
+
+     }
+     .inicio-1{
+         grid-template-columns: 30% auto;
+         grid-template-rows: repeat(2, 1fr);
+         grid-template-areas: "foto-inicio-desktop" "inicio-textos" "foto-inicio-descarga";
+         justify-content: flex-start;
+         column-gap: 30px;
+     }
+     .inicio-1 h1{
+         justify-self: center;
+         margin-top: 27rem;
+         margin-left: 20rem;
+         font-size: 7rem;
+     }
+     .inicio-textos p{
+         display: flex;
+         font-size: 3rem;
+         color: var(--white);
+         width: 600px;
+         margin-left: 25rem;
+     }
+     .inicio-textos h4, .inicio-textos h5{
+         display: none
+     }
+     .foto-inicio-desktop img{
+        width: 25rem;
+        position: relative;
+        margin-top: 15rem;
+     }
+
+     .funciones{
+         background-image: linear-gradient(white, #780ca3);
+     }
+     
+     .funciones-foto{
+         flex-direction: row;
+         margin: auto;
+         align-items: center;
+        justify-content: center;
+     }
+     .funciones h3{
+        font-size: 5rem;
+        color: var(--black);
+        margin-left: 40rem;
+        margin-bottom: 4rem;
+    }
+    .funciones-foto img{
+     width: 15rem;
+     margin-right: 3rem;
+     margin-top: 3rem;
+    }
+    .funciones-foto-1 img{
+        width: 11rem;
+    }
+    .funciones-foto-1,.funciones-foto-2, .funciones-foto-3, .funciones-foto-4, .funciones-foto-5{
+        margin-top: 6rem;
+        margin-left: 3rem;
+        box-shadow: 4px 8px 8px var(--middlewhite);
+        border-radius: 10px;
+        width: 400px;
+        height: 350px;
+    }
+    .funciones-foto h5{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+    .funciones-foto p{
+        font-size: 1.5rem;
+        opacity: 0.88;
+ 
+    }
+    .tarjeta h3{
+        font-size: 6rem;
+        margin-top: auto;
+    }
+    .tarjeta h5{
+        font-size: 3rem;
+        margin: auto;
+        margin-left: 5rem;
+    }
+
+    .grid-container{
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+    }
+
+
+    .container-2-foto{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-2 h3{
+        font-size: 5rem;
+        margin: auto;
+        margin-top: 6rem;
+        
+    }
+    .container-2 h5{
+     display: block;
+     font-size: 2rem;
+     width: 600px;
+     margin: auto;
+    }
+    .container-2-foto-1, .container-2-foto-2{
+        margin-bottom: 30px;
+        background-color: var(--white);
+       
+    }
+    .container-2-foto-1 p, .container-2-foto-2 p{
+        font-size: 2rem;
+    }
+    .container-2-foto img {
+        width: 50rem;
+        margin-top: 3rem;
+        margin-right: 8rem;
+    }
+
+    .beneficiosypromociones{
+        width: 100%;
+        padding-top: 5rem;
+        
+    
+    }
+    .beneficiosypromociones h3{
+        font-size: 5rem;
+        background-color: var(--blue);
+        color: var(--white);
+        margin: 10px auto;
+    }
+    .beneficiosypromociones h4{
+        margin-left: 30rem;
+        padding-top: 2rem;
+        font-size: 6rem;
+    }
+    .beneficiosypromociones p {
+        padding-top: 2rem;
+        margin-left: 30rem;
+        font-size: 3rem;
+        
+    }
+    .promocion-foto img {
+        width: 110rem;
+        margin-top: 3rem;
+        margin-left: 20rem;
+        
+    }
+    .foto-beneficios{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .rueda-main{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: "rueda-main-h3" "rueda-main-h5" ;
+        height: 100px;
+    }
+    .rueda-main-foto{
+        position: relative;
+        bottom: 45rem;
+    }
+    .rueda-main-foto img {
+        width: 45rem;
+    }
+    .rueda-main h3{
+        width: 600px;
+        font-size: 8rem;
+        font-weight: 200;
+        justify-self: flex-end;
+        padding-left: 7rem;
+    }
+    
+    .rueda-main h5{
+        width: 600px;
+        font-size: 5rem;
+        font-weight: 200;
+        justify-self: flex-end;
+        padding-left: 7rem;
+    }
+    .rueda-main-2 {
+        padding-top: 10rem;
+    }
+    .rueda-main-2 h4{
+        width: 600px;
+        font-size: 4rem;
+        margin-top: 10rem;
+    }
+    .rueda-main-2 p{
+        width: 600px;
+        font-size: 2rem;
+    }
+    .rueda-main-2{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+    .rueda-main-2 img {
+        width: 50rem;
+        justify-self: center;
+    }
+    .rueda-premios h3{
+        font-size: 5rem;
+        font-weight: 200;
+        width: 100%;
+    }
+    .rueda-premios img {
+        width: 25rem;
+        margin: 15px 120px;
+        
+    }
+    .rueda-premios-info h3{
+        width: 60rem;
+        font-size: 5rem;
+    }
+    .rueda-premios-info p{
+        width: 600px;
+        font-size: 3rem;
+
+    }
+    .rueda-premios-info img{
+        width: 500px;
+        margin: 2rem 10rem;
+    }
+    
+   
+    .inversionescripto-1{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto;
+        grid-template-areas: "inversiones-texto" "inversiones-foto";
+        height: 50rem;
+        
+    }
+    .inversionescripto-1 h3{
+        font-size: 6rem;
+        width: 60rem;
+        padding-top: 6rem;
+    }
+    .inversionescripto-1 h5{
+        font-size: 2rem;
+        width: 60rem;
+    }
+   .inversionescripto-1 img{
+       width: 55rem;
+       position: relative;
+       left: 600px;
+       bottom: 40rem;
+   }
+   .inversionescripto-2 h3{
+       font-size: 5rem;
+       margin: 3rem 25rem;
+   }
+   .foto-cripto{
+       flex-direction: row;
+   }
+   .inversionescripto-3{
+    flex-direction: row;
+    align-items: center;
+   }
+    
+    
+.inversionescripto-3 h3 {
+    font-size: 5rem;
+    width: 50rem;
+}
+.inversionescripto-3 h3 {
+    font-size: 4rem;
+    width: 50rem;
+}
+.inversionescripto-3{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "inversionescripto-3-h3" "foto-cripto-6" "foto-cripto-5";
+    justify-content: center;
+}
+.foto-cripto-5 {
+    position: relative;
+    bottom: 25rem;
+}
+.foto-cripto-6 {
+    width: 35rem;
+    margin-left: 20rem;
+    padding-top: 20rem;
+
+}
+
+
+.canalesdecontacto h3{
+    font-size: 7rem;
+}
+.canalesdecontacto h5{
+    font-size: 3rem;
+}
+.canalesdecontacto p{
+    font-size: 2rem;
+    width: 80rem;
+    padding-bottom: 6rem;
+}
+.formulario form{
+    width: 29rem;
+    margin:20px;
+}
+.formulario label{
+    font-size: 1.7rem;
+}
+.formulario input{
+   width: 27rem;
+}
+.formulario select {
+    width: 27rem;
+}
+.formulario textarea{
+   border: 3px solid var(--middlewhite);
+   width: 40rem
+}
+.formulario-boton{
+    background-color: var(--middlewhite);
+    margin-top: 3rem;
+    border-radius: 5px;
+    margin-left: 4rem;
+    margin-bottom: 40rem;
+    
+}
+
+
+
+
+
+
+
+
+
+    .footer{
+        background-color: var(--middlewhite);
+    }
+    .footer-container{
+        grid-template-columns: repeat(2,auto);
+    }
+    .grid-1{
+        display: flex;
+        justify-items: center;
+    
+    }
+    .container-redes, .container-nosotros, .container-carreras{
+        margin-right: 10rem;
+        margin-left: 16rem;
+    }
+    .footer-container h5{
+        font-size: 2rem;
+    }
+    
+    .footer-container li a {
+        font-size: 1.5rem;
+    }
+    .fotos-footer img {
+        margin-bottom: 1.5rem;
+        width: 6rem
+    }
+    
+
+
+
+    
+}
