@@ -494,6 +494,7 @@ header{
         margin: auto;
         font-weight: 300;
         padding-bottom: 3rem;
+        line-height: 1.5;
     }
     .rueda-main-2 p{
         font-size: 2.5rem;
@@ -532,21 +533,19 @@ header{
     .rueda-premios-info h3{
         padding-top: 5rem;
         font-weight: 300;
-        margin: auto;
         padding-bottom: 4rem;
         font-size: 3rem;
         width: 300px;
     }
     .rueda-premios-info p {
         font-size: 2rem;
-        margin: auto;
         font-weight: 200;
         width: 300px;
         margin-bottom: 5rem;
     }
     .rueda-premios-info img {
         width: 30rem;
-        margin-left: 1rem;
+        margin: 5px 1rem;
         border-radius: 10px;
         margin-bottom:1rem;
         box-shadow: 2px 2px 2px;

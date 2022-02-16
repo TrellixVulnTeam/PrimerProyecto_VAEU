@@ -264,6 +264,7 @@
         width: 600px;
         font-size: 4rem;
         margin-top: 10rem;
+
     }
     .rueda-main-2 p{
         width: 600px;
@@ -290,10 +291,12 @@
     .rueda-premios-info h3{
         width: 60rem;
         font-size: 5rem;
+        margin: auto;
     }
     .rueda-premios-info p{
         width: 600px;
         font-size: 3rem;
+        margin: auto;
 
     }
     .rueda-premios-info img{
