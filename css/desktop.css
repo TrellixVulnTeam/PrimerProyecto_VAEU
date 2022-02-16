@@ -65,6 +65,7 @@
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         grid-template-areas: "foto-inicio-mobile" "inicio-textos" ".""foto-inicio-descarga";
+        height: 800px;
     
     }
     .foto-inicio-mobile {
@@ -99,33 +100,33 @@
 
      }
      .foto-inicio-descarga img{
+         width: 17rem;
+         margin-left: 5rem;
         transition: width 1s;
      }
      .foto-inicio-descarga img:hover{
-        width: 300px;
+        width: 25rem;
     }
     
 
 
      .funciones{
          background-image: linear-gradient(white, #780ca3);
+         width: 100%;
      }
      
      .funciones-foto{
          flex-direction: row;
          margin: auto;
-         align-items: center;
-        justify-content: center;
+         width: 80%; 
      }
      .funciones h3{
         font-size: 5rem;
         color: var(--black);
-        margin-left: 40rem;
         margin-bottom: 4rem;
     }
     .funciones-foto img{
      width: 15rem;
-     margin-right: 3rem;
      margin-top: 3rem;
     }
     .funciones-foto-1 img{
@@ -133,16 +134,15 @@
     }
     .funciones-foto-1,.funciones-foto-2, .funciones-foto-3, .funciones-foto-4, .funciones-foto-5{
         margin-top: 6rem;
-        margin-left: 3rem;
         box-shadow: 4px 8px 8px var(--middlewhite);
         border-radius: 10px;
         width: 400px;
         height: 350px;
+        margin-right: 15rem;
     }
     .funciones-foto h5{
         font-size: 2.5rem;
         font-weight: bold;
-        margin-left: 3rem;
         margin-bottom: 3rem;
     }
     .funciones-foto p{
@@ -157,7 +157,6 @@
     .tarjeta h5{
         font-size: 3rem;
         margin: auto;
-        margin-left: 5rem;
     }
 
     .grid-container{
@@ -210,20 +209,17 @@
         margin: 10px auto;
     }
     .beneficiosypromociones h4{
-        margin-left: 30rem;
         padding-top: 2rem;
         font-size: 6rem;
     }
     .beneficiosypromociones p {
         padding-top: 2rem;
-        margin-left: 30rem;
         font-size: 3rem;
         
     }
     .promocion-foto img {
         width: 110rem;
         margin-top: 3rem;
-        margin-left: 20rem;
         
     }
     .foto-beneficios{
@@ -325,8 +321,8 @@
    .inversionescripto-1 img{
        width: 55rem;
        position: relative;
-       left: 600px;
-       bottom: 40rem;
+       bottom: 35rem;
+       left: 60rem;
    }
    .inversionescripto-2 h3{
        font-size: 5rem;
@@ -335,76 +331,62 @@
    .foto-cripto{
        flex-direction: row;
    }
-   .inversionescripto-3{
-    flex-direction: row;
-    align-items: center;
-   }
     
     
-.inversionescripto-3 h3 {
+    
+    
+    .inversionescripto-3 h3 {
     font-size: 5rem;
     width: 50rem;
-}
-.inversionescripto-3 h3 {
+    }
+    .inversionescripto-3 h3 {
     font-size: 4rem;
     width: 50rem;
-}
-.inversionescripto-3{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "inversionescripto-3-h3" "foto-cripto-6" "foto-cripto-5";
-    justify-content: center;
-}
-.foto-cripto-5 {
-    position: relative;
-    bottom: 25rem;
-}
-.foto-cripto-6 {
-    width: 35rem;
-    margin-left: 20rem;
-    padding-top: 20rem;
+    margin-left: 15rem;
+    padding-top: 30rem;
+    }
+    .foto-cripto-5{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 35rem;
+    }
+    .foto-cripto-5 img{
+        width: 30rem;
+        position: relative;
+        bottom:15rem;
 
-}
+    }
 
 
-.canalesdecontacto h3{
-    font-size: 7rem;
-}
-.canalesdecontacto h5{
+
+    .canalesdecontacto h5{
     font-size: 3rem;
-}
-.canalesdecontacto p{
+    }
+    .canalesdecontacto h3{
+    font-size: 5rem;
+    }
+    .canalesdecontacto p{
     font-size: 2rem;
-    width: 80rem;
-    padding-bottom: 6rem;
-}
-.formulario form{
-    width: 29rem;
-    margin:20px;
-}
-.formulario label{
-    font-size: 1.7rem;
-}
-.formulario input{
-   width: 27rem;
-}
-.formulario select {
-    width: 27rem;
-}
-.formulario textarea{
-   border: 3px solid var(--middlewhite);
-   width: 40rem
-}
-.formulario-boton{
-    background-color: var(--middlewhite);
-    margin-top: 3rem;
-    border-radius: 5px;
-    margin-left: 4rem;
-    margin-bottom: 40rem;
+    width: 800px;
+    margin: 10px auto;
+    }
+    .formulario form{
+        width: 70%;
+        margin: 50px auto;
+    }
+    .formulario input, .formulario select {
+        width: 100%;
+        height: 25px;
+    }
+    .formulario label {
+        font-size: 2rem;
+    }
+    .formulario-boton{
+        width: 500px;
+        height: 25px;
+    }
     
-}
-
 
 
 
@@ -438,6 +420,10 @@
     .fotos-footer img {
         margin-bottom: 1.5rem;
         width: 6rem
+    }
+    .footer-final p{
+        width: 100%;
+        font-size: 1rem;
     }
     
 
