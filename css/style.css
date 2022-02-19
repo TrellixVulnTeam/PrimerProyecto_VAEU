@@ -3,6 +3,7 @@
     --darkpink:#fa0cbf;
     --darkviolet:#a008bd;
     --middlewhite:#ecedef;
+    --grey:#c2c5cc;
     --softviolet:#780ca3;
     --blue:#720bc2;
     --backgroundviolet:#6409ab;
@@ -187,7 +188,7 @@ header{
      
     .inicio{
         background-color: var(--white);
-        background-image: linear-gradient(#6409ab,#780ca3,violet, white)
+        background-image: linear-gradient(#6409ab,#780ca3, white)
     }
      .inicio-1{
          grid-template-columns: auto;
@@ -235,6 +236,7 @@ header{
 
    .funciones{
        margin-top: 35rem;
+       background-color: var(--white);
        
    }
    .funciones h3{
@@ -272,8 +274,7 @@ header{
 
    .tarjeta{
     background-image: url(https://s6c7h4e3.stackpathcdn.com/wp-content/uploads/2020/07/bigstock-Background-Purple-And-White-B-333163945.jpg);
-    padding-top: 10rem;
-    margin-top: 5rem;
+    padding-top: 15rem;
    }
    .tarjeta h3{
        font-size: 3rem;
@@ -370,6 +371,46 @@ header{
    }
    .container-2-foto img {
        width: 30rem;
+   }
+
+   .prextamo{
+    background-color: var(--blue);
+    margin-top: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+   }
+   .prextamo-foto h3{
+    color: var(--white);
+   }
+
+   .prextamo-foto figure img {
+       width: 30rem;
+   }
+   .prextamo-texto h3 {
+       display: none;
+   }
+   .prextamo-texto-1{
+       margin-bottom: 5rem;
+       border: 3px solid var(--backgroundviolet);
+       border-radius: 10px;
+   }
+   .prextamo-texto-1 img {
+    width: 10rem;
+    padding-bottom: 10px;
+   }
+   .prextamo-3 img {
+       width: 13rem;
+   }
+   .prextamo-texto h5 {
+       color: white;
+       font-weight: 400;
+       font-size: 2rem;
+   }
+   .prextamo-texto p{
+       color: white;
+       font-weight: 300;
+       font-size: 1.5rem;
+       opacity: 0.95;
    }
 
    .beneficiosypromociones{
@@ -494,6 +535,7 @@ header{
         margin: auto;
         font-weight: 300;
         padding-bottom: 3rem;
+        line-height: 1.5;
     }
     .rueda-main-2 p{
         font-size: 2.5rem;
@@ -532,21 +574,19 @@ header{
     .rueda-premios-info h3{
         padding-top: 5rem;
         font-weight: 300;
-        margin: auto;
         padding-bottom: 4rem;
         font-size: 3rem;
         width: 300px;
     }
     .rueda-premios-info p {
         font-size: 2rem;
-        margin: auto;
         font-weight: 200;
         width: 300px;
         margin-bottom: 5rem;
     }
     .rueda-premios-info img {
         width: 30rem;
-        margin-left: 1rem;
+        margin: 5px 1rem;
         border-radius: 10px;
         margin-bottom:1rem;
         box-shadow: 2px 2px 2px;
@@ -734,6 +774,71 @@ header{
     font-weight: 400;
 }
 
+ /* css unicamente de secciones*/ 
+
+ .payo{
+     background-color: var(--blue);
+ }
+ .payo-fotos figure img{
+     padding-top: 5rem;
+     width: 25rem;
+ }
+ .payo-texto h3{
+     color: var(--white);
+     font-weight: 300;
+     width: 25rem;
+     margin: 5px auto;
+     font-size: 4rem;
+     padding-top: 5rem;
+     
+ }
+.payo-background figure img {
+    width: 30rem;
+}
+.payo-2{
+    background-color: var(--middlewhite);
+    padding-bottom: 20rem;
+  
+}
+.payo-2-cards {
+    display: flex;
+    flex-direction: column;
+}
+.payo-2-card{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: 5px auto;
+    padding-top: 4rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 0.3px solid var(--grey);
+}
+.payo-2 h3{
+    font-size: 3rem;
+}
+.payo-2 p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    width: 70%;
+    margin: 5px auto;
+    padding-bottom: 5rem;
+}
+.payo-2-card h4{
+    color: var(--blue);
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+.payo-2-card figure img {
+    width: 5rem;
+    margin-left: 5rem;
+}
+.payo-2-card p {
+    font-weight: 300;
+    font-weight: 1.5rem;
+    margin: 5px auto;
+}
 
 
 }
