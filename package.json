@@ -1,0 +1,24 @@
+{
+  "name": "primerproyecto",
+  "version": "1.0.0",
+  "description": "Migrando css a sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass":"node-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianaPfaffe/PrimerProyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucianaPfaffe/PrimerProyecto/issues"
+  },
+  "homepage": "https://github.com/LucianaPfaffe/PrimerProyecto#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodesass": "^0.0.2-security"
+  }
+}
