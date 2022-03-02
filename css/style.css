@@ -454,38 +454,7 @@
 
 
 
-.footer{
-    background-color: var(--middlewhite);
-    opacity: 0.8;
-    color: var(--violet);
-}
-.footer img {
-    width: 3.5rem;
-}
-.footer-container{
-    grid-template-columns: repeat(2,160px);
-    column-gap: 50px;
-    margin-top: 2rem
-}
-.footer-container h5{
-    font-size: 1rem;
-}
-.footer-container li{
-    list-style: none;
-}
-.footer-container li a {
-    color: var(--black);
-    font-size: 1rem;
-    text-decoration: none;
-}
-.fotos-footer img {
-    margin-bottom: 1.5rem;
-}
-.footer-final p{
-    width: 80%;
-    font-size: 1rem;
-    font-weight: 400;
-}
+
 
  /* css unicamente de secciones*/ 
 

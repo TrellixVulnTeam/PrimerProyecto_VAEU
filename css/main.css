@@ -21,6 +21,9 @@ header {
   header .header-icon {
     grid-area: header-icon; }
 
+.main-button {
+  background-color: #fa0cbf; }
+
 .inicio-1 {
   display: grid; }
   .inicio-1 .inicio-texto {
@@ -267,7 +270,7 @@ header {
           transition: all 0.4s linear;
           transition: font-size 0.5s; }
           header .nav .navbar .menu li a:hover {
-            background-color: var(--softviolet);
+            background-color: #a008bd;
             opacity: 0.8;
             font-size: 2rem; }
         header .nav .navbar .menu li .main-button {
@@ -373,4 +376,10 @@ header {
         width: 6rem; }
       .footer .footer-container .footer-final p {
         width: 100%;
-        font-size: 1rem; } }
+        font-size: 1rem; }
+  .facebook {
+    background-color: #3b5998; }
+  .instagram {
+    background-color: #fa0cbf; }
+  .linkedin {
+    background-color: #76b8e4; } }

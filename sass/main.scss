@@ -2,6 +2,13 @@
 
 @import "./abstracts/variables";
 
+$footer:(facebook:#3b5998,instagram: #fa0cbf,linkedin:#76b8e4 );
+$somecolors:(backgrounds:(#a008bd));
+
+
+
+
+
 html{
     font-size: 62.5%;
 }
@@ -21,6 +28,9 @@ header{
     .header-icon{
         grid-area: header-icon;
     }
+}
+.main-button{
+    background-color: map-get($map: $footer, $key:instagram );
 }
 
 
@@ -391,7 +401,7 @@ header{
                             transition: all 0.4s linear;
                             transition: font-size 0.5s;
                             &:hover {
-                                background-color: var(--softviolet);
+                                background-color: map-get($map: $somecolors, $key: backgrounds);
                                 opacity: 0.8;
                                 font-size: 2rem;
                             }
@@ -566,6 +576,13 @@ header{
                 font-size: 1rem;
             }
         }
+    }
+    @each $foot,
+    $color in $footer {
+        .#{$foot} {
+            background-color: $color;
+        }
+        
     }
    
 }
