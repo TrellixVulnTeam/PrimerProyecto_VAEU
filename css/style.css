@@ -23,94 +23,11 @@
 @media(min-width:320px){
    
 
-   .tarjeta{
-    background-image: url(https://s6c7h4e3.stackpathcdn.com/wp-content/uploads/2020/07/bigstock-Background-Purple-And-White-B-333163945.jpg);
-    padding-top: 15rem;
-   }
-   .tarjeta h3{
-       font-size: 3rem;
-   }
-   .tarjeta h5{
-       font-size: 2rem;
-   }
-   .container{
-       margin-top: 4rem;
-       
-       
-       
-   }
-   .paso1, .paso2, .paso3{
-       margin: 50px auto;
-       width: 290px;
-       height: 310px;
-       position: relative;
-       transform-style: preserve-3d;
-       box-shadow: 4px 4px 4px var(--middlewhite);
-       background: var(--white);
-   }
-   .paso1 h5, .paso2 h5, .paso3 h5{
-       color: var(--violet);
-       margin-bottom: 2rem;
-       font-size: 2rem;
-       margin-left: 4rem;
-       margin-top: 4rem;
-   }
-   .paso1 img, .paso2 img, .paso3 img{
-       width: 22rem;
-       margin-left: 3rem;
-   }
-   .paso2 img{
-       width: 25rem;
-   }
-   .paso1 p, .paso2 p, .paso3 p {
-       font-size: 2.5rem;
-       margin-top: 7rem;
-       color: var(--violet);
-       font-weight: 400;
-    
-   }
-   .adelante, .atras{
-       width: 100%;
-       height: 100%;
-       position: absolute;
-       -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-   }
-   .atras{
-    transform: rotateY(180deg);
-    
-    
-   }
-   .container:hover .paso1{
-    transform: rotateY(180deg);
-   }
-   .container:hover .paso2{
-    transform: rotateY(180deg);
-   }
-   .container:hover .paso3{
-    transform: rotateY(180deg);
-   }
-   
-   .container-2{
-       grid-template-columns: auto;
-       grid-template-rows: repeat(3,1fr);
-       grid-template-areas: "container-2-h3" "container-2-h5" "container-2-foto";
-       background-color: var(--white);
-   }
    .container-2-foto{
        flex-direction: column;
        background-color: var(--white);
    }
-   .container-2 h3{
-       font-size: 2.7rem;
-       color: var(--violet);
-       border-radius: 2rem;
-       
-       
-   }
-   .container-2 h5{
-    display: none;
-   }
+
    .container-2-foto-1, .container-2-foto-2{
        margin-bottom: 30px;
        background-color: var(--white);

@@ -4,6 +4,11 @@
 
 $footer:(facebook:#3b5998,instagram: #fa0cbf,linkedin:#76b8e4 );
 $somecolors:(backgrounds:(#a008bd));
+$specialcolors:(boton-verde:rgb(54, 201, 54))
+@mixin sizes($width, $height){
+    width:$width;
+    height:$height;
+}
 
 
 
@@ -142,9 +147,8 @@ header{
         grid-template-rows:auto auto;
         grid-template-areas: "header-icon" "nav";
         background-color: var(--white);
-        height: 5rem;
         position: fixed;
-        width: 100%;
+        @include sizes(100%,5rem )
         z-index: 1;
         top: 0;
         .nav{
@@ -313,6 +317,163 @@ header{
             }
         }
        }
+      
+/* seccion 2 */
+.tarjeta{
+    background-image: url(https://s6c7h4e3.stackpathcdn.com/wp-content/uploads/2020/07/bigstock-Background-Purple-And-White-B-333163945.jpg);
+    padding-top: 15rem;
+    h3{
+        font-size: 3rem;
+    }
+    h5{
+        font-size: 2rem;
+    }
+    .grid-container{
+        .container{
+            margin-top: 4rem;
+            .paso1, .paso2, .paso3{
+                margin: 50px auto;
+                width: 290px;
+                height: 310px;
+                position: relative;
+                transform-style: preserve-3d;
+                box-shadow: 4px 4px 4px var(--middlewhite);
+                background: var(--white);
+                h5{
+                    color: var(--violet);
+                    margin-bottom: 2rem;
+                    font-size: 2rem;
+                    margin-left: 4rem;
+                    margin-top: 4rem;
+                }
+                img{
+                    width: 22rem;
+                    margin-left: 3rem;
+                }
+                p {
+                    font-size: 2.5rem;
+                    margin-top: 7rem;
+                    color: var(--violet);
+                    font-weight: 400;
+                 
+                }
+                .adelante{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+                .atras{
+                    @extend .adelante;
+                    transform: rotateY(180deg);
+                }
+                &:hover{
+                    transform: rotateY(180deg);
+                }
+            }
+            .paso2{
+                img{
+                    width: 35rem;
+                }
+            }
+        }
+    }
+/* seccion 3 */
+
+   
+/* seccion 4 */
+    .inversionescripto{
+    background-color: var(--white);
+    padding-top: 5rem;
+    .inversionescripto-1{
+        background-color: var(--blue);
+        height: 650px;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: "inversiones-foto" "inversiones-texto";
+        justify-items: center;
+        align-items: center;
+        color: var(--white);
+        .inversiones-foto{
+            img{
+                width: 30rem;
+            }
+        }
+        .inversiones-texto{
+            h3{
+                font-size: 4rem;
+            }
+            h5{
+                font-size: 1.5rem;
+                padding-top: 2rem;
+            padding-bottom: 4rem;
+            }
+        }
+    }
+    .inversionescripto-2{
+        h3{
+         font-size: 3rem;
+         margin-top: 2rem;
+        }
+        .foto-cripto{
+         display: flex;
+         margin-top: 3rem;
+         flex-direction: column;
+         .foto-cripto-1 , .foto-cripto-2, .foto-cripto-3, .foto-cripto-4{
+             width: 24rem;
+             margin: 40px auto;
+             background-color: var(--white);
+             border-radius: 2rem;
+             display: flex;
+             flex-direction: column;
+             box-shadow: 10px 15px 15px var(--middlewhite);
+         
+         }
+         img{
+             background-color: #eee8f7;;
+             border-radius: 15rem;
+             width: 11rem;
+             margin-top: 5rem;
+         }
+         h4{
+             font-size: 2rem;
+         }
+         p{
+             font-size: 12px;
+             opacity: 0.85;
+             padding-top: 2rem;
+             padding-bottom: 3rem;
+         }
+     
+     }
+    
+   }
+   .inversionescripto-3{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "inversionescripto-3-h3" "foto-cripto-5" "foto-cripto-6";
+    h3{
+        width: 100%;
+        font-size: 4rem;
+    }
+    ul{
+        list-style: none;
+        li{
+            font-size: 1.8rem;
+            padding-top: 4rem;
+        }
+    }
+    .foto-cripto-6 {
+        width: 30rem;
+        padding-top: 3rem;
+        margin: 5px auto;
+        margin-bottom: 10rem;
+    }
+   }
+   
+   }
+
 
 
 
@@ -533,6 +694,39 @@ header{
             .prextamo-texto-1 {
                 margin-right: 3rem;
             }
+        }
+    }
+    /* seccion 2 */
+    .tarjeta{
+        h3{
+            font-size: 6rem;
+            margin-top: auto;
+        }
+        h5{
+            font-size: 3rem;
+            margin: auto;
+        }
+        .grid-container{
+            display:grid;
+            grid-template-columns: repeat(3,auto);
+        }
+        .container-2{
+            h3{
+                font-size: 5rem;
+                margin: auto;
+                margin-top: 6rem;
+            }
+            h5{
+                display: block;
+                font-size: 2rem;
+                width: 600px;
+                margin: auto;
+            }
+        }
+        .container-2-foto{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
     }
 
