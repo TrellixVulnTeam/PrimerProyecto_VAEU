@@ -11,7 +11,15 @@ $specialcolors:(boton-verde:rgb(54, 201, 54));
 }
 
 
-
+.rueda-main h5{
+    grid-area: rueda-main-h5;
+}
+.rueda-main h3{
+    grid-area: rueda-main-h3;
+}
+.rueda-main-foto{
+    grid-area: rueda-main-foto;
+}
 
 
 html{
