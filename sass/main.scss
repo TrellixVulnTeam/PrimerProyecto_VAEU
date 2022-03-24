@@ -1815,13 +1815,7 @@ article{
             }
         }
     }
-    @each $foot,
-    $color in $footer {
-        .#{$foot} {
-            background-color: $color;
-        }
-        
-    }
+    
    
 }
 
