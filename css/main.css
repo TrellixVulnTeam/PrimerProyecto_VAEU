@@ -104,9 +104,9 @@ header {
     grid-template-rows: auto auto;
     grid-template-areas: "header-icon" "nav";
     background-color: var(--white);
-    height: 5rem;
     position: fixed;
     width: 100%;
+    height: 5rem;
     z-index: 1;
     top: 0; }
     header .nav .navbar .menu {
@@ -189,96 +189,571 @@ header {
       box-shadow: 4px 8px 8px var(--middlewhite);
       border-radius: 10px; }
   .prextamo {
-    background-color: var(--blue);
+    background-color: #ecedef;
     margin-top: 5rem;
     padding-top: 10rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 5rem; }
     .prextamo .prextamo-foto h3 {
-      color: var(--white); }
+      color: #720bc2; }
     .prextamo .prextamo-foto figure img {
       width: 30rem; }
     .prextamo .prextamo-texto h3 {
       display: none; }
     .prextamo .prextamo-texto .prextamo-texto-1 {
-      margin-bottom: 5rem;
-      border: 3px solid var(--backgroundviolet);
-      border-radius: 10px; }
+      width: 85%;
+      background-color: #720bc2;
+      border-radius: 10px;
+      margin: 3rem auto; }
       .prextamo .prextamo-texto .prextamo-texto-1 img {
         width: 10rem;
         padding-bottom: 10px; }
       .prextamo .prextamo-texto .prextamo-texto-1 h5 {
-        color: white;
+        color: #720bc2;
         font-weight: 400;
-        font-size: 2rem; }
+        font-size: 2rem;
+        background-color: #ffffff; }
       .prextamo .prextamo-texto .prextamo-texto-1 p {
-        color: white;
+        color: #ffffff;
         font-weight: 300;
         font-size: 1.5rem;
         opacity: 0.95; }
     .prextamo .prextamo-texto .prextamo-3 img {
       width: 13rem; }
+    .prextamo .prextamo-funcion h3 {
+      font-size: 3rem; }
+    .prextamo .prextamo-funcion h5 {
+      font-size: 2rem;
+      width: 80%;
+      opacity: 0.78;
+      margin: 5px auto; }
+    .prextamo .prextamo-funcion div {
+      padding-top: 5rem; }
+      .prextamo .prextamo-funcion div div h5 {
+        opacity: 1;
+        color: #720bc2;
+        margin-bottom: 3rem;
+        font-weight: 300; }
+      .prextamo .prextamo-funcion div div img {
+        width: 24rem; }
+    .prextamo .prextamo-preguntas div div {
+      background-color: #ffffff;
+      margin: 4rem auto;
+      width: 95%;
+      border: 0.3px solid #000000;
+      border-radius: 2px; }
+      .prextamo .prextamo-preguntas div div h5 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        width: 80%;
+        margin: 5px auto; }
+      .prextamo .prextamo-preguntas div div img {
+        width: 1.5rem;
+        opacity: 0.6;
+        position: relative;
+        bottom: 2.7rem;
+        margin-right: 1rem;
+        cursor: pointer; }
   /* seccion 2 */
   .tarjeta {
-    background-image: url(https://s6c7h4e3.stackpathcdn.com/wp-content/uploads/2020/07/bigstock-Background-Purple-And-White-B-333163945.jpg);
+    background-color: #ecedef;
     padding-top: 15rem; }
     .tarjeta h3 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      background-color: #720bc2; }
     .tarjeta h5 {
       font-size: 2rem; }
-    .tarjeta .grid-container .container .paso1, .tarjeta .grid-container .container .paso2, .tarjeta .grid-container .container .paso3 {
-      margin: 50px auto;
-      width: 290px;
-      height: 310px;
-      position: relative;
-      transform-style: preserve-3d;
-      box-shadow: 4px 4px 4px var(--middlewhite);
-      background: var(--white); }
-      .tarjeta .grid-container .container .paso1 h5, .tarjeta .grid-container .container .paso2 h5, .tarjeta .grid-container .container .paso3 h5 {
-        color: var(--violet);
-        margin-bottom: 2rem;
-        font-size: 2rem;
-        margin-left: 4rem;
-        margin-top: 4rem; }
-      .tarjeta .grid-container .container .paso1 img, .tarjeta .grid-container .container .paso2 img, .tarjeta .grid-container .container .paso3 img {
-        width: 22rem;
-        margin-left: 3rem; }
-      .tarjeta .grid-container .container .paso1 p, .tarjeta .grid-container .container .paso2 p, .tarjeta .grid-container .container .paso3 p {
-        font-size: 2.5rem;
-        margin-top: 7rem;
-        color: var(--violet);
-        font-weight: 400; }
-      .tarjeta .grid-container .container .paso1 .adelante, .tarjeta .grid-container .container .paso1 .atras, .tarjeta .grid-container .container .paso2 .adelante, .tarjeta .grid-container .container .paso2 .atras, .tarjeta .grid-container .container .paso3 .adelante, .tarjeta .grid-container .container .paso3 .atras {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; }
-      .tarjeta .grid-container .container .paso1 .atras, .tarjeta .grid-container .container .paso2 .atras, .tarjeta .grid-container .container .paso3 .atras {
-        transform: rotateY(180deg); }
-      .tarjeta .grid-container .container .paso1:hover, .tarjeta .grid-container .container .paso2:hover, .tarjeta .grid-container .container .paso3:hover {
-        transform: rotateY(180deg); }
-    .tarjeta .grid-container .container-2 {
-      grid-template-columns: auto;
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "container-2-h3" "container-2-h5" "container-2-foto";
+    .tarjeta .grid-container .container {
+      margin-top: 4rem; }
+      .tarjeta .grid-container .container .paso1, .tarjeta .grid-container .container .paso2, .tarjeta .grid-container .container .paso3 {
+        margin: 50px auto;
+        width: 290px;
+        height: 310px;
+        position: relative;
+        transform-style: preserve-3d;
+        box-shadow: 4px 4px 4px #c2c5cc;
+        background: #ffffff;
+        border-radius: 1rem; }
+        .tarjeta .grid-container .container .paso1 h5, .tarjeta .grid-container .container .paso2 h5, .tarjeta .grid-container .container .paso3 h5 {
+          color: var(--violet);
+          margin-bottom: 2rem;
+          font-size: 2rem;
+          margin-left: 4rem;
+          margin-top: 4rem;
+          margin-bottom: 3rem; }
+        .tarjeta .grid-container .container .paso1 img, .tarjeta .grid-container .container .paso2 img, .tarjeta .grid-container .container .paso3 img {
+          width: 22rem;
+          margin-left: 3rem; }
+        .tarjeta .grid-container .container .paso1 p, .tarjeta .grid-container .container .paso2 p, .tarjeta .grid-container .container .paso3 p {
+          font-size: 2.5rem;
+          margin-top: 7rem;
+          color: var(--violet);
+          font-weight: 400; }
+        .tarjeta .grid-container .container .paso1 .adelante, .tarjeta .grid-container .container .paso1 .atras, .tarjeta .grid-container .container .paso2 .adelante, .tarjeta .grid-container .container .paso2 .atras, .tarjeta .grid-container .container .paso3 .adelante, .tarjeta .grid-container .container .paso3 .atras {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+        .tarjeta .grid-container .container .paso1 .atras, .tarjeta .grid-container .container .paso2 .atras, .tarjeta .grid-container .container .paso3 .atras {
+          transform: rotateY(180deg); }
+        .tarjeta .grid-container .container .paso1:hover, .tarjeta .grid-container .container .paso2:hover, .tarjeta .grid-container .container .paso3:hover {
+          transform: rotateY(180deg); }
+      .tarjeta .grid-container .container .paso2 img {
+        width: 27rem; }
+  .container-2-foto {
+    flex-direction: column;
+    background-color: var(--white); }
+    .container-2-foto img {
+      width: 30rem; }
+    .container-2-foto .container-2-foto-1, .container-2-foto .container-2-foto-2 {
+      margin-bottom: 30px;
       background-color: var(--white); }
-      .tarjeta .grid-container .container-2 .container-2-foto {
-        flex-direction: column;
-        background-color: var(--white); }
-        .tarjeta .grid-container .container-2 .container-2-foto .container-2-foto-1, .tarjeta .grid-container .container-2 .container-2-foto .container-2-foto-2 {
-          margin-bottom: 30px;
-          background-color: var(--white); }
-          .tarjeta .grid-container .container-2 .container-2-foto .container-2-foto-1 p, .tarjeta .grid-container .container-2 .container-2-foto .container-2-foto-2 p {
-            color: var(--violet);
-            font-size: 1.7rem; }
-      .tarjeta .grid-container .container-2 h3 {
-        font-size: 2.7rem;
+      .container-2-foto .container-2-foto-1 p, .container-2-foto .container-2-foto-2 p {
         color: var(--violet);
-        border-radius: 2rem; }
-      .tarjeta .grid-container .container-2 h5 {
-        display: none; }
-      .tarjeta .grid-container .container-2 img {
-        width: 30rem; }
+        font-size: 1.7rem; }
+  .internacional {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ecedef;
+    color: #ffffff; }
+    .internacional .internacional-textos {
+      background-color: #720bc2;
+      padding: 5rem 2rem; }
+      .internacional .internacional-textos h3 {
+        font-size: 2.5rem;
+        margin-left: 1.5rem; }
+      .internacional .internacional-textos h5 {
+        font-weight: 300;
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
+        width: 90%; }
+    .internacional aside {
+      background-color: #ffffff;
+      color: #000000;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+      padding-bottom: 2rem; }
+      .internacional aside h5 {
+        font-size: 1.5rem;
+        font-weight: 400; }
+      .internacional aside p {
+        font-size: 2rem; }
+      .internacional aside select {
+        background-color: #720bc2;
+        height: 30px;
+        border: 1px solid #ecedef;
+        color: #ecedef; }
+      .internacional aside button {
+        margin-top: 2rem;
+        border: none;
+        color: #720bc2;
+        opacity: 0.9; }
+        .internacional aside button:hover {
+          color: #36c936; }
+      .internacional aside .internacional-extra {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 2rem; }
+        .internacional aside .internacional-extra img {
+          width: 2.2rem;
+          margin-left: 1rem; }
+        .internacional aside .internacional-extra p {
+          font-size: 1.7rem;
+          font-weight: 300;
+          opacity: 0.97; }
+  article {
+    display: grid;
+    grid-template-columns: auto;
+    color: black;
+    background-color: #ede6f6;
+    width: 100%;
+    padding-top: 4rem;
+    width: 85%;
+    height: 50rem;
+    border-radius: 2rem;
+    margin: 5px auto; }
+    article .internacional-1 {
+      color: #720bc2;
+      font-weight: 500; }
+      article .internacional-1 h5 {
+        font-size: 3rem; }
+      article .internacional-1 h3 {
+        font-size: 10rem; }
+    article .internacional-2 h3 {
+      font-weight: 400;
+      font-size: 3rem;
+      width: 25rem;
+      margin: 1px auto; }
+    article .internacional-2 h5 {
+      font-weight: 200;
+      font-size: 1.5rem; }
+    article p {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      opacity: 0.88; }
+  .rapid h3 {
+    color: black;
+    font-size: 2rem;
+    margin-top: 4rem; }
+  .internacional-comision-2 {
+    padding-top: 5rem; }
+    .internacional-comision-2 div {
+      color: black;
+      background-color: #ffffff;
+      width: 85%;
+      height: 17rem;
+      margin: 2rem auto; }
+      .internacional-comision-2 div img {
+        width: 5rem;
+        padding-top: 3rem;
+        margin-bottom: 1rem; }
+      .internacional-comision-2 div h5 {
+        font-size: 2rem; }
+        .internacional-comision-2 div h5:hover {
+          font-size: 3rem;
+          color: #720bc2; }
+      .internacional-comision-2 div p {
+        font-size: 1rem;
+        opacity: 0.9; }
+  .internacional-comision-3 {
+    background-color: #ecedef;
+    color: #000000; }
+    .internacional-comision-3 .internacional-comision-3-grid {
+      display: grid; }
+      .internacional-comision-3 .internacional-comision-3-grid .grid-1 div {
+        width: 90%;
+        margin: 10px auto; }
+        .internacional-comision-3 .internacional-comision-3-grid .grid-1 div h3 {
+          font-size: 5rem;
+          margin-right: 3rem;
+          color: #720bc2; }
+          .internacional-comision-3 .internacional-comision-3-grid .grid-1 div h3:hover {
+            opacity: 0.5;
+            font-size: 6rem; }
+        .internacional-comision-3 .internacional-comision-3-grid .grid-1 div h5 {
+          font-size: 1.8rem;
+          font-weight: 300; }
+      .internacional-comision-3 .internacional-comision-3-grid .grid-2 img {
+        padding-top: 4rem;
+        width: 30rem;
+        margin-left: 1.5rem; }
+  .internacional-comision-final {
+    background-color: #ecedef;
+    color: #000000; }
+    .internacional-comision-final .texto {
+      background-color: #720bc2;
+      margin-top: 8rem; }
+      .internacional-comision-final .texto h3, .internacional-comision-final .texto p {
+        width: 80%;
+        font-size: 3rem;
+        font-weight: 300;
+        margin: 6px auto;
+        color: white;
+        padding-top: 5rem; }
+      .internacional-comision-final .texto p {
+        font-size: 2rem;
+        font-weight: 400;
+        width: 60%;
+        padding-bottom: 10rem; }
+  /* mas de la tarjeta */
+  .payo {
+    background-color: var(--blue); }
+    .payo .payo-fotos figure img {
+      padding-top: 5rem;
+      width: 25rem; }
+    .payo .payo-texto h3 {
+      color: var(--white);
+      font-weight: 300;
+      width: 25rem;
+      margin: 5px auto;
+      font-size: 4rem;
+      padding-top: 5rem; }
+    .payo .payo-background figure img {
+      width: 30rem; }
+  .payo-2 {
+    background-color: var(--middlewhite);
+    padding-bottom: 20rem; }
+    .payo-2 h3 {
+      font-size: 3rem; }
+    .payo-2 p {
+      font-size: 1.7rem;
+      font-weight: 400;
+      width: 70%;
+      margin: 5px auto;
+      padding-bottom: 5rem; }
+    .payo-2 .payo-2-cards {
+      display: flex;
+      flex-direction: column; }
+      .payo-2 .payo-2-cards .payo-2-card {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        margin: 5px auto;
+        padding-top: 4rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        border: 0.3px solid var(--grey); }
+        .payo-2 .payo-2-cards .payo-2-card h4 {
+          color: var(--blue);
+          font-size: 2rem;
+          margin-left: 5rem; }
+        .payo-2 .payo-2-cards .payo-2-card p {
+          font-weight: 300;
+          font-weight: 1.5rem;
+          margin: 5px auto; }
+        .payo-2 .payo-2-cards .payo-2-card figure img {
+          width: 10rem;
+          margin-left: 5rem; }
+  /* seccion 3 */
+  .beneficiosypromociones {
+    padding-top: 5rem; }
+    .beneficiosypromociones h3 {
+      font-size: 3rem;
+      background-color: var(--blue);
+      color: var(--white);
+      margin: 10px auto;
+      padding-top: 5rem; }
+    .beneficiosypromociones .promocion-foto h4 {
+      padding-top: 2rem;
+      font-size: 4rem; }
+    .beneficiosypromociones .promocion-foto p {
+      padding-top: 2rem;
+      font-size: 2.4rem; }
+    .beneficiosypromociones .promocion-foto img {
+      width: 30rem;
+      margin: 50px auto; }
+    .beneficiosypromociones .foto-beneficios {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .beneficiosypromociones .foto-beneficios .fotos-bene {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .beneficiosypromociones .foto-beneficios .fotos-bene figure {
+          position: relative;
+          height: 250px;
+          width: 255px;
+          overflow: hidden;
+          box-shadow: 5px 15px 25px var(--middlewhite);
+          cursor: pointer;
+          margin-bottom: 6rem; }
+          .beneficiosypromociones .foto-beneficios .fotos-bene figure img {
+            width: 100%;
+            transition: all 500ms ease-out;
+            margin: 5px auto; }
+          .beneficiosypromociones .foto-beneficios .fotos-bene figure .capa {
+            padding-top: 10rem;
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.6);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center; }
+            .beneficiosypromociones .foto-beneficios .fotos-bene figure .capa h5 {
+              font-size: 1.5rem;
+              color: var(--black);
+              font-weight: 400; }
+            .beneficiosypromociones .foto-beneficios .fotos-bene figure .capa button {
+              border-radius: 2px;
+              background-color: var(--middlewhite);
+              border: 2px solid var(--white);
+              width: 10rem; }
+              .beneficiosypromociones .foto-beneficios .fotos-bene figure .capa button a {
+                text-decoration: none;
+                color: var(--black); }
+          .beneficiosypromociones .foto-beneficios .fotos-bene figure:hover > .capa {
+            opacity: 1;
+            visibility: visible; }
+  /*Seccion 6 */
+  .ruedadepremios {
+    background-color: var(--blue); }
+    .ruedadepremios .rueda-fondo {
+      width: 100%;
+      height: 600px; }
+    .ruedadepremios .rueda-main {
+      position: relative;
+      bottom: 500px;
+      color: var(--white);
+      height: 450px; }
+      .ruedadepremios .rueda-main h3 {
+        font-size: 6rem;
+        margin-left: 5rem;
+        width: 20rem;
+        font-weight: 300; }
+      .ruedadepremios .rueda-main h5 {
+        font-size: 3rem;
+        margin-left: 5rem;
+        width: 25rem;
+        font-weight: 200; }
+      .ruedadepremios .rueda-main figure img {
+        width: 35rem; }
+    .ruedadepremios .rueda-main-2 {
+      background-color: #ecedef; }
+      .ruedadepremios .rueda-main-2 div h4 {
+        font-size: 4rem;
+        width: 25rem;
+        margin: auto;
+        font-weight: 300;
+        padding-bottom: 3rem;
+        line-height: 1.5; }
+      .ruedadepremios .rueda-main-2 div p {
+        font-size: 2.5rem;
+        width: 25rem;
+        margin: auto;
+        font-weight: 200; }
+      .ruedadepremios .rueda-main-2 img {
+        width: 30rem;
+        padding-top: 3rem; }
+  .rueda-premios {
+    background-color: #ecedef;
+    padding-bottom: 4rem; }
+    .rueda-premios h3 {
+      font-size: 3rem;
+      font-weight: 300;
+      width: 28rem;
+      margin: auto;
+      padding-bottom: 4rem; }
+    .rueda-premios img {
+      width: 25rem;
+      margin: 10px 25px;
+      border-radius: 20px;
+      box-shadow: 2px 5px 5px; }
+  .rueda-premios-info {
+    width: 100%;
+    background-color: #720bc2;
+    color: #ffffff;
+    padding-bottom: 15rem; }
+    .rueda-premios-info h3 {
+      padding-top: 5rem;
+      font-weight: 300;
+      padding-bottom: 4rem;
+      font-size: 3rem;
+      width: 300px; }
+    .rueda-premios-info p {
+      font-size: 2rem;
+      font-weight: 200;
+      width: 300px;
+      margin-bottom: 5rem; }
+    .rueda-premios-info img {
+      width: 30rem;
+      margin: 5px 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 2px 2px 2px; }
+  /* seccion 4 */
+  .inversionescripto {
+    background-color: #ffffff;
+    padding-top: 5rem; }
+    .inversionescripto .inversionescripto-1 {
+      background-color: #720bc2;
+      height: 650px;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "inversiones-foto" "inversiones-texto";
+      justify-items: center;
+      align-items: center;
+      color: #ffffff; }
+      .inversionescripto .inversionescripto-1 .inversiones-foto img {
+        width: 34rem; }
+      .inversionescripto .inversionescripto-1 .inversiones-texto h3 {
+        font-size: 3.2rem;
+        margin: 2px auto; }
+      .inversionescripto .inversionescripto-1 .inversiones-texto h5 {
+        font-size: 1.6rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        opacity: 0.9;
+        margin: 2px auto;
+        width: 88%; }
+    .inversionescripto .inversionescripto-2 h3 {
+      font-size: 3rem;
+      margin-top: 2rem; }
+    .inversionescripto .inversionescripto-2 div {
+      display: flex;
+      margin-top: 3rem;
+      flex-direction: column; }
+      .inversionescripto .inversionescripto-2 div div {
+        width: 24rem;
+        margin: 40px auto;
+        background-color: var(--white);
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 10px 15px 15px var(--middlewhite); }
+        .inversionescripto .inversionescripto-2 div div img {
+          background-color: #eee8f7;
+          border-radius: 15rem;
+          width: 11rem;
+          margin-top: 5rem; }
+        .inversionescripto .inversionescripto-2 div div h4 {
+          font-size: 2rem; }
+        .inversionescripto .inversionescripto-2 div div p {
+          font-size: 12px;
+          opacity: 0.85;
+          padding-top: 2rem;
+          padding-bottom: 3rem; }
+    .inversionescripto .inversionescripto-3 {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "inversionescripto-3-h3" "foto-cripto-5" "foto-cripto-6"; }
+      .inversionescripto .inversionescripto-3 h3 {
+        width: 100%;
+        font-size: 4rem; }
+      .inversionescripto .inversionescripto-3 .foto-cripto-5 ul {
+        list-style: none; }
+        .inversionescripto .inversionescripto-3 .foto-cripto-5 ul li {
+          font-size: 1.8rem;
+          padding-top: 4rem; }
+      .inversionescripto .inversionescripto-3 .foto-cripto-6 {
+        width: 30rem;
+        padding-top: 3rem;
+        margin: 5px auto;
+        margin-bottom: 10rem; }
+  /* seccion 5 */
+  .canalesdecontacto {
+    background-color: rgba(114, 11, 194, 0.9);
+    color: #ffffff; }
+    .canalesdecontacto h3 {
+      font-size: 3rem;
+      padding-top: 15rem;
+      background-color: var(--middlewhite);
+      color: var(--blue); }
+    .canalesdecontacto h5 {
+      font-size: 1.5rem;
+      padding-top: 1rem; }
+    .canalesdecontacto p {
+      font-size: 1.2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-weight: 300; }
+    .canalesdecontacto .formulario form {
+      width: 20rem;
+      margin: 2px auto; }
+      .canalesdecontacto .formulario form div label {
+        font-size: 1.5rem;
+        font-weight: 400; }
+      .canalesdecontacto .formulario form div input {
+        border: 3px solid var(--middlewhite);
+        width: 20rem;
+        margin-bottom: 2rem; }
+      .canalesdecontacto .formulario form div select {
+        margin-bottom: 4rem; }
+      .canalesdecontacto .formulario form div textarea {
+        border: 3px solid var(--middlewhite);
+        width: 100%; }
+      .canalesdecontacto .formulario form div .formulario-boton {
+        background-color: var(--middlewhite);
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 2rem; }
   /* footer */
   .footer {
     background-color: var(--middlewhite);
@@ -342,81 +817,384 @@ header {
           border-radius: 5px;
           margin-top: 0.5rem; }
   /* seccion 1*/
-  .inicio h4, .inicio h5 {
-    display: none; }
-  .inicio .inicio-1 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "foto-inicio-mobile" "inicio-textos" "." "foto-inicio-descarga"; }
-    .inicio .inicio-1 .foto-inicio-mobile {
-      width: 60rem;
-      margin-top: 10rem; }
-    .inicio .inicio-1 .inicio-textos h1 {
-      font-size: 9rem;
-      margin-top: 20rem;
-      font-weight: 400; }
-    .inicio .inicio-1 .inicio-textos p {
-      font-size: 3.3rem;
-      margin-top: 5rem;
-      font-weight: 300;
-      display: block;
-      width: 600px;
-      color: var(--white);
-      margin-left: 15rem; }
-    .inicio .inicio-1 .foto-inicio-descarga {
-      grid-template-columns: repeat(3, auto);
-      top: 40rem;
+  .inicio {
+    width: 99%;
+    height: 1000px; }
+    .inicio .inicio-1 {
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "inicio-texto" "foto-inicio-mobile" "foto-inicio-descarga";
+      height: 1500px; }
+      .inicio .inicio-1 .inicio-textos {
+        margin: 5px auto; }
+        .inicio .inicio-1 .inicio-textos h1 {
+          justify-self: center;
+          margin-top: 15rem;
+          font-size: 8rem;
+          width: 70%;
+          font-weight: 400; }
+        .inicio .inicio-1 .inicio-textos h4, .inicio .inicio-1 .inicio-textos h5 {
+          font-size: 5rem;
+          width: 65%;
+          font-weight: 300; }
+      .inicio .inicio-1 .foto-inicio-mobile {
+        width: 59rem;
+        position: relative;
+        bottom: 51rem;
+        left: 50rem; }
+      .inicio .inicio-1 .foto-inicio-descarga {
+        grid-template-columns: repeat(3, 1fr);
+        top: 30rem;
+        justify-content: center;
+        column-gap: 2rem;
+        cursor: pointer;
+        width: 500px; }
+        .inicio .inicio-1 .foto-inicio-descarga img {
+          margin-left: 30rem;
+          width: 20rem; }
+          .inicio .inicio-1 .foto-inicio-descarga img:hover {
+            width: 25rem;
+            opacity: 0.9; }
+  .funciones {
+    background-image: linear-gradient(white, #780ca3); }
+    .funciones h3 {
+      font-size: 6rem;
+      color: #000000;
+      padding-bottom: 5rem; }
+    .funciones .funciones-foto {
+      flex-direction: row;
+      margin: 1rem auto;
       justify-content: center;
-      column-gap: 5px;
-      cursor: pointer;
-      right: 16rem; }
-      .inicio .inicio-1 .foto-inicio-descarga img {
-        width: 17rem;
-        margin-left: 5rem;
-        transition: width 1s; }
-        .inicio .inicio-1 .foto-inicio-descarga img:hover {
-          width: 25rem; }
-  .funciones h3 {
+      width: 95%; }
+      .funciones .funciones-foto h5 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: 3rem;
+        margin-bottom: 3rem; }
+      .funciones .funciones-foto p {
+        font-size: 1.5rem;
+        opacity: 0.88; }
+      .funciones .funciones-foto img {
+        width: 15rem;
+        margin-right: 3rem;
+        margin-top: 3rem; }
+      .funciones .funciones-foto .funciones-foto-1 img {
+        width: 11rem; }
+      .funciones .funciones-foto .funciones-foto-5 img {
+        width: 18rem; }
+      .funciones .funciones-foto .funciones-foto-1, .funciones .funciones-foto .funciones-foto-2, .funciones .funciones-foto .funciones-foto-3, .funciones .funciones-foto .funciones-foto-4, .funciones .funciones-foto .funciones-foto-5 {
+        margin-top: 6rem;
+        margin-left: 3rem;
+        box-shadow: 4px 8px 8px var(--middlewhite);
+        border-radius: 10px;
+        width: 400px;
+        height: 350px; }
+  .prextamo .prextamo-foto h3 {
+    font-size: 6rem;
+    font-weight: 300;
+    color: #000000; }
+  .prextamo .prextamo-foto figure img {
+    display: none; }
+  .prextamo .prextamo-funcion h3 {
     font-size: 5rem;
-    color: var(--black);
-    margin-bottom: 4rem; }
-  .funciones .funciones-foto {
-    flex-direction: row;
+    padding-top: 4rem; }
+  .prextamo .prextamo-funcion h5 {
+    font-size: 3rem; }
+  .prextamo .prextamo-funcion div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 96%;
+    margin: 2rem auto; }
+    .prextamo .prextamo-funcion div div {
+      display: flex;
+      flex-direction: column; }
+      .prextamo .prextamo-funcion div div img {
+        width: 34rem; }
+      .prextamo .prextamo-funcion div div h5 {
+        font-size: 3rem; }
+  .prextamo .prextamo-preguntas {
+    padding-bottom: 10rem; }
+    .prextamo .prextamo-preguntas div div img {
+      width: 2.1rem; }
+  .tarjeta {
+    padding-bottom: 10rem; }
+    .tarjeta .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, auto); }
+    .tarjeta h3 {
+      margin-top: auto;
+      font-size: 7rem; }
+    .tarjeta h5 {
+      font-size: 5rem;
+      margin: auto; }
+  .container-2 h3 {
+    font-size: 6rem;
     margin: auto;
-    width: 80%; }
-    .funciones .funciones-foto img {
-      width: 15rem;
-      margin-top: 3rem; }
-    .funciones .funciones-foto .funciones-foto-1, .funciones .funciones-foto .funciones-foto-2, .funciones .funciones-foto .funciones-foto-3, .funciones .funciones-foto .funciones-foto-4, .funciones .funciones-foto .funciones-foto-5 {
-      margin-top: 6rem;
-      box-shadow: 4px 8px 8px var(--middlewhite);
-      width: 400px;
-      height: 350px;
-      margin-right: 15rem; }
-    .funciones .funciones-foto .funciones-foto-1 img {
-      width: 11rem; }
-    .funciones .funciones-foto h5 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 3rem;
-      opacity: 0.9;
+    margin-top: 6rem;
+    padding-top: 4rem;
+    color: #ecedef; }
+  .container-2 h5 {
+    display: block;
+    font-size: 2rem;
+    width: 600px;
+    margin: auto;
+    padding-bottom: 4rem;
+    color: #ecedef; }
+  .container-2-foto {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .container-2-foto .container-2-foto-1, .container-2-foto .container-2-foto-2 {
+      width: 96%;
+      margin-bottom: 30px;
+      background-color: var(--white); }
+      .container-2-foto .container-2-foto-1 img, .container-2-foto .container-2-foto-2 img {
+        width: 50rem;
+        margin-top: 3rem;
+        margin-right: 8rem; }
+      .container-2-foto .container-2-foto-1 p, .container-2-foto .container-2-foto-2 p {
+        font-size: 2.5rem;
+        padding-top: 3rem; }
+  .internacional {
+    width: 95%;
+    background-color: #ffffff;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+    .internacional .internacional-textos h3 {
+      font-size: 5rem;
+      color: #ffffff; }
+    .internacional .internacional-textos h5 {
+      font-size: 3rem;
+      opacity: 0.8; }
+    .internacional .internacional-cambio aside p {
+      font-size: 3rem; }
+    .internacional .internacional-cambio aside h5 {
+      font-size: 3rem;
+      font-weight: 300; }
+    .internacional .internacional-cambio aside select {
+      height: 5rem;
+      width: 75%;
+      font-size: 2rem;
+      margin: 5px auto; }
+    .internacional .internacional-cambio aside input {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    .internacional .internacional-cambio aside .internacional-extra p {
+      font-size: 2rem;
+      padding-bottom: 4rem; }
+    .internacional .internacional-cambio aside .internacional-extra img {
+      width: 3rem; }
+  article {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin-top: 5rem; }
+    article .internacional-1 h5 {
+      font-size: 7rem; }
+    article .internacional-1 h3 {
+      font-size: 15rem; }
+    article .internacional-2 h3 {
+      font-size: 5rem; }
+    article .internacional-2 h5 {
+      font-size: 2rem;
       margin-top: 2rem; }
-    .funciones .funciones-foto p {
-      font-size: 1.5rem;
-      opacity: 0.80; }
-  .prextamo {
+    article p {
+      font-size: 2rem;
+      opacity: 0.6; }
+  .rapid h3 {
+    display: none; }
+  .internacional-comision-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 6rem; }
+    .internacional-comision-2 div {
+      height: 100%;
+      box-shadow: 2px 3px 5px #c2c5cc;
+      border-radius: 1rem; }
+      .internacional-comision-2 div p {
+        width: 90%;
+        font-size: 1.5rem; }
+      .internacional-comision-2 div h5 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem; }
+      .internacional-comision-2 div img {
+        width: 7rem; }
+  .internacional-comision-3 {
+    padding-top: 4rem; }
+    .internacional-comision-3 h3 {
+      font-size: 5rem; }
+    .internacional-comision-3 .internacional-comision-3-grid {
+      display: grid;
+      grid-template-columns: auto auto; }
+      .internacional-comision-3 .internacional-comision-3-grid .grid-1 {
+        width: 90%;
+        margin: 1rem auto; }
+        .internacional-comision-3 .internacional-comision-3-grid .grid-1 div {
+          margin-top: 5rem; }
+          .internacional-comision-3 .internacional-comision-3-grid .grid-1 div h3 {
+            margin-left: 1rem;
+            border-radius: 2rem;
+            width: 6%;
+            border: 1px solid #720bc2; }
+          .internacional-comision-3 .internacional-comision-3-grid .grid-1 div h5 {
+            font-size: 2.5rem; }
+      .internacional-comision-3 .internacional-comision-3-grid .grid-2 img {
+        width: 36rem;
+        padding-bottom: 4rem; }
+  /* mas de la tarjeta */
+  .payo {
     display: grid;
     grid-template-columns: auto auto; }
-    .prextamo .prextamo-foto figure img {
-      width: 50rem; }
-    .prextamo .prextamo-foto h3 {
-      display: none; }
-    .prextamo .prextamo-texto h3 {
-      display: block;
-      color: var(--white); }
-    .prextamo .prextamo-texto .prextamo-texto-1 {
-      margin-right: 3rem; }
+    .payo .payo-fotos figure img {
+      width: 40rem; }
+    .payo .payo-texto h3 {
+      width: 50rem;
+      font-size: 5rem;
+      padding-bottom: 5rem; }
+    .payo .payo-background figure img {
+      width: 60rem; }
+  .payo-2 h3 {
+    font-size: 6rem;
+    width: 80rem;
+    margin: 10px auto; }
+  .payo-2 p {
+    font-size: 3rem;
+    font-weight: 300; }
+  /* seccion 3*/
+  .beneficiosypromociones {
+    width: 100%;
+    padding-top: 5rem; }
+    .beneficiosypromociones h3 {
+      font-size: 7rem;
+      background-color: var(--blue);
+      color: var(--white);
+      margin: 10px auto; }
+    .beneficiosypromociones .promocion-foto h4 {
+      padding-top: 2rem;
+      font-size: 6rem; }
+    .beneficiosypromociones .promocion-foto p {
+      padding-top: 2rem;
+      font-size: 3rem; }
+    .beneficiosypromociones .promocion-foto img {
+      width: 110rem;
+      margin-top: 3rem; }
+    .beneficiosypromociones .foto-beneficios {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 5rem; }
+  /* seccion 6*/
+  .ruedadepremios .rueda-main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "rueda-main-h3" "rueda-main-h5";
+    height: 100px;
+    bottom: 400px; }
+    .ruedadepremios .rueda-main h3 {
+      width: 600px;
+      font-size: 8rem;
+      font-weight: 200;
+      justify-self: flex-end;
+      padding-left: 7rem; }
+    .ruedadepremios .rueda-main h5 {
+      width: 600px;
+      font-size: 5rem;
+      font-weight: 200;
+      justify-self: flex-end;
+      padding-left: 7rem; }
+    .ruedadepremios .rueda-main figure {
+      position: relative;
+      bottom: 45rem; }
+      .ruedadepremios .rueda-main figure img {
+        width: 45rem; }
+  .ruedadepremios .rueda-main-2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-top: 10rem; }
+    .ruedadepremios .rueda-main-2 div h4 {
+      width: 600px;
+      font-size: 4rem;
+      margin-top: 10rem; }
+    .ruedadepremios .rueda-main-2 div p {
+      width: 600px;
+      font-size: 2rem; }
+    .ruedadepremios .rueda-main-2 img {
+      width: 50rem;
+      justify-self: center; }
+  .rueda-premios h3 {
+    font-size: 5rem;
+    font-weight: 200;
+    width: 100%; }
+  .rueda-premios img {
+    width: 25rem;
+    margin: 15px 120px; }
+  .rueda-premios-info h3 {
+    width: 60rem;
+    font-size: 5rem;
+    margin: auto; }
+  .rueda-premios-info p {
+    width: 600px;
+    font-size: 3rem;
+    margin: auto; }
+  .rueda-premios-info img {
+    width: 500px;
+    margin: 2rem 10rem; }
+  /* seccion 4 */
+  .inversionescripto .inversionescripto-1 {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    grid-template-areas: "inversiones-texto" "inversiones-foto";
+    height: 50rem; }
+    .inversionescripto .inversionescripto-1 .inversiones-texto h3 {
+      font-size: 6rem;
+      width: 60rem;
+      padding-top: 6rem; }
+    .inversionescripto .inversionescripto-1 .inversiones-texto h5 {
+      font-size: 2rem;
+      width: 60rem; }
+    .inversionescripto .inversionescripto-1 .inversiones-foto img {
+      width: 55rem;
+      position: relative;
+      bottom: 35rem;
+      left: 60rem; }
+  .inversionescripto .inversionescripto-2 h3 {
+    font-size: 5rem;
+    margin: 3rem 25rem; }
+  .inversionescripto .inversionescripto-2 div {
+    flex-direction: row; }
+  .inversionescripto .inversionescripto-3 {
+    grid-template-rows: auto; }
+    .inversionescripto .inversionescripto-3 .foto-cripto-5 {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-items: center; }
+      .inversionescripto .inversionescripto-3 .foto-cripto-5 ul {
+        margin-top: 5rem; }
+        .inversionescripto .inversionescripto-3 .foto-cripto-5 ul li {
+          font-size: 3rem; }
+    .inversionescripto .inversionescripto-3 .foto-cripto-6 {
+      width: 40rem;
+      margin-top: 2rem; }
+  /* seccion 5*/
+  .canalesdecontacto h3 {
+    font-size: 7rem; }
+  .canalesdecontacto h5 {
+    font-size: 3rem; }
+  .canalesdecontacto p {
+    font-size: 2rem;
+    font-weight: 400;
+    width: 800px;
+    margin: 10px auto; }
+  .canalesdecontacto .formulario form {
+    width: 70%;
+    margin: 50px auto; }
+    .canalesdecontacto .formulario form div input, .canalesdecontacto .formulario form div select {
+      width: 100%;
+      height: 25px; }
+    .canalesdecontacto .formulario form div label {
+      font-size: 2rem; }
+    .canalesdecontacto .formulario form div .formulario-boton {
+      width: 500px;
+      height: 25px;
+      margin: 3rem auto; }
   /* footer*/
   .footer {
     background-color: var(--middlewhite); }

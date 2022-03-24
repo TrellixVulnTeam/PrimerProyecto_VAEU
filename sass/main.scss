@@ -4,7 +4,7 @@
 
 $footer:(facebook:#3b5998,instagram: #fa0cbf,linkedin:#76b8e4 );
 $somecolors:(backgrounds:(#a008bd));
-$specialcolors:(boton-verde:rgb(54, 201, 54))
+$specialcolors:(boton-verde:rgb(54, 201, 54));
 @mixin sizes($width, $height){
     width:$width;
     height:$height;
@@ -148,7 +148,7 @@ header{
         grid-template-areas: "header-icon" "nav";
         background-color: var(--white);
         position: fixed;
-        @include sizes(100%,5rem )
+        @include sizes(100%,5rem );
         z-index: 1;
         top: 0;
         .nav{
@@ -272,13 +272,13 @@ header{
         
     }
     .prextamo{
-        background-color: var(--blue);
+        background-color:$middlewhite;
         margin-top: 5rem;
         padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
         .prextamo-foto{
             h3{
-                color: var(--white);
+                color:$blue;
                }
             figure{
                 img {
@@ -291,20 +291,22 @@ header{
                 display: none;
             }
             .prextamo-texto-1{
-                margin-bottom: 5rem;
-                border: 3px solid var(--backgroundviolet);
+                width: 85%;
+                background-color: $blue;
                 border-radius: 10px;
+                margin: 3rem auto;
                 img {
                     width: 10rem;
                     padding-bottom: 10px;
                    }
                 h5 {
-                    color: white;
+                    color: $blue;
                     font-weight: 400;
                     font-size: 2rem;
+                    background-color: $white;
                 }
                 p{
-                    color: white;
+                    color: $white;
                     font-weight: 300;
                     font-size: 1.5rem;
                     opacity: 0.95;
@@ -316,14 +318,67 @@ header{
                 }
             }
         }
-       }
+        .prextamo-funcion{
+            h3{
+                font-size: 3rem;
+            }
+            h5{
+                font-size: 2rem;
+                width: 80%;
+                opacity: 0.78;
+                margin: 5px auto;
+            }
+            div{
+                padding-top: 5rem;
+                div{
+                    h5{
+                        opacity: 1;
+                        color: $blue;
+                        margin-bottom: 3rem;
+                        font-weight: 300;
+                    }
+                    img{
+                        width: 24rem;
+                        
+                    }
+                }
+            }
+        }
+        .prextamo-preguntas{
+            div{
+                div{
+                    background-color: $white;
+                    margin: 4rem auto;
+                    width: 95%;
+                    border: 0.3px solid $black;
+                    border-radius: 2px;
+
+                    h5{
+                        font-size: 2rem;
+                        margin-bottom: 4rem;
+                        width: 80%;
+                        margin: 5px auto;
+                    }
+                    img{
+                        width: 1.5rem;
+                        opacity: 0.6;
+                        position: relative;
+                        bottom: 2.7rem;
+                        margin-right: 1rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+}
       
 /* seccion 2 */
 .tarjeta{
-    background-image: url(https://s6c7h4e3.stackpathcdn.com/wp-content/uploads/2020/07/bigstock-Background-Purple-And-White-B-333163945.jpg);
+    background-color: $middlewhite;
     padding-top: 15rem;
     h3{
         font-size: 3rem;
+        background-color: $blue;
     }
     h5{
         font-size: 2rem;
@@ -337,14 +392,16 @@ header{
                 height: 310px;
                 position: relative;
                 transform-style: preserve-3d;
-                box-shadow: 4px 4px 4px var(--middlewhite);
-                background: var(--white);
+                box-shadow: 4px 4px 4px $grey;
+                background: $white;
+                border-radius: 1rem;
                 h5{
                     color: var(--violet);
                     margin-bottom: 2rem;
                     font-size: 2rem;
                     margin-left: 4rem;
                     margin-top: 4rem;
+                    margin-bottom: 3rem;
                 }
                 img{
                     width: 22rem;
@@ -374,106 +431,652 @@ header{
             }
             .paso2{
                 img{
-                    width: 35rem;
+                    width: 27rem;
                 }
             }
         }
     }
-/* seccion 3 */
-
-   
-/* seccion 4 */
-    .inversionescripto{
+    
+}
+.container-2-foto{
+    flex-direction: column;
     background-color: var(--white);
+    img {
+        width: 30rem;
+    }
+    .container-2-foto-1, .container-2-foto-2{
+        margin-bottom: 30px;
+        background-color: var(--white);
+        p{
+            color: var(--violet);
+            font-size: 1.7rem;
+        }
+       
+    }
+
+}
+.internacional{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $middlewhite;
+    color: $white;
+    
+    .internacional-textos{
+        background-color: $blue;
+        h3{
+            font-size: 2.5rem;
+            margin-left: 1.5rem;
+        }
+        h5{
+            font-weight: 300;
+            font-size: 1.4rem;
+            margin-left: 1.5rem;
+            width: 90%;
+        }
+        padding: 5rem 2rem;
+    }
+   
+    aside{
+        h5{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        p{
+            font-size: 2rem;
+        }
+        background-color: $white;
+        color: $black;
+        select{
+            
+            background-color: $blue;
+            height: 30px;
+            border: 1px solid $middlewhite;
+            color: $middlewhite;
+        }
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        button{
+            margin-top: 2rem;
+            border: none;
+            color: $blue;
+            opacity: 0.9;
+            &:hover{
+                color: map-get($map:$specialcolors, $key: boton-verde);
+            }
+        }
+        .internacional-extra{
+            display: grid;
+            grid-template-columns: auto auto;
+            img{
+                width: 2.2rem;
+                margin-left: 1rem;
+            }
+            p{
+                font-size: 1.7rem;
+                font-weight: 300;
+                opacity: 0.97;
+            }
+            margin-top: 2rem;
+        }
+        
+
+    }
+    
+}
+article{
+    display: grid;
+    grid-template-columns: auto;
+    color: black;
+    background-color:$softbackground;
+    width: 100%;
+    padding-top: 4rem;
+    width: 85%;
+    height: 50rem;
+    border-radius: 2rem;
+    margin: 5px auto;
+    .internacional-1{
+        color: $blue;
+        font-weight: 500;
+        
+        h5{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 10rem;
+        }
+    }
+    .internacional-2{
+        h3{
+            font-weight: 400;
+            font-size: 3rem;
+            width: 25rem;
+            margin: 1px auto;
+        }
+        h5{
+            font-weight: 200;
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        opacity: 0.88;
+    }
+    
+}
+.rapid{
+    h3{
+        color: black;
+    font-size: 2rem;
+    margin-top: 4rem;
+    }
+    
+}
+.internacional-comision-2{
+    padding-top: 5rem;
+    div{
+        color: black;
+        img{
+            width: 5rem;
+            padding-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        background-color: $white;
+        width: 85%;
+        height: 17rem;
+        h5{
+            font-size: 2rem;
+            &:hover{
+                font-size: 3rem;
+                color: $blue;
+            }
+        }
+        p{
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        margin: 2rem auto;
+       
+    }
+}
+.internacional-comision-3{
+    background-color: $middlewhite;
+    color: $black;
+    .internacional-comision-3-grid{
+        display: grid;
+        .grid-1{
+            div{
+                width: 90%;
+                margin: 10px auto;
+            
+                h3{
+                    font-size: 5rem;
+                    margin-right: 3rem;
+                    color: $blue;
+                    &:hover{
+                        opacity: 0.5;
+                        font-size: 6rem;
+                    }
+                }
+                h5{
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                }
+            }
+        }
+        .grid-2{
+            img{
+                padding-top: 4rem;
+                width: 30rem;
+                margin-left: 1.5rem;
+                
+            }
+            
+            
+        }
+    }
+}
+.internacional-comision-final{
+    background-color: $middlewhite;
+    color: $black;
+    .texto{
+        background-color: $blue;
+        h3, p{
+            width: 80%;
+            font-size: 3rem;
+            font-weight: 300;
+            margin: 6px auto;
+            color: white;
+            padding-top: 5rem;
+            
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 400;
+            width: 60%;
+            padding-bottom: 10rem;
+        }
+        margin-top: 8rem;
+    }
+    
+}
+/* mas de la tarjeta */
+.payo{
+    background-color: var(--blue);
+        .payo-fotos{
+            figure{
+                img{
+                    padding-top: 5rem;
+                    width: 25rem;
+                }
+            }
+        }
+        .payo-texto{
+            h3{
+                color: var(--white);
+                font-weight: 300;
+                width: 25rem;
+                margin: 5px auto;
+                font-size: 4rem;
+                padding-top: 5rem;
+                
+            }
+        }
+        .payo-background{
+            figure{
+                img {
+                    width: 30rem;
+                }
+            }
+        }
+
+}
+.payo-2{
+    background-color: var(--middlewhite);
+    padding-bottom: 20rem;
+    h3{
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.7rem;
+        font-weight: 400;
+        width: 70%;
+        margin: 5px auto;
+        padding-bottom: 5rem;
+    }
+    .payo-2-cards{
+        display: flex;
+        flex-direction: column;
+        .payo-2-card{
+            background-color: var(--white);
+            display: flex;
+            flex-direction: column;
+            width: 30rem;
+            margin: 5px auto;
+            padding-top: 4rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 0.3px solid var(--grey);
+        h4{
+            color: var(--blue);
+            font-size: 2rem;
+            margin-left: 5rem;
+        }
+        p {
+            font-weight: 300;
+            font-weight: 1.5rem;
+            margin: 5px auto;
+        }
+        figure{
+            img {
+                width: 10rem;
+                margin-left: 5rem;
+            }
+        }
+        }
+    }
+}
+
+/* seccion 3 */
+.beneficiosypromociones{
+    padding-top: 5rem;
+    h3{
+        font-size: 3rem;
+       background-color: var(--blue);
+       color: var(--white);
+       margin: 10px auto;
+       padding-top: 5rem;
+    }
+    .promocion-foto{
+        h4{
+            padding-top: 2rem;
+            font-size: 4rem;
+        }
+        p{
+            padding-top: 2rem;
+      
+            font-size: 2.4rem;
+        }
+        img{
+            width: 30rem;
+             margin:50px auto;
+        }
+    }
+    .foto-beneficios{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       .fotos-bene{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        figure{
+            position: relative;
+        height: 250px;
+         width: 255px;
+        overflow: hidden;
+        box-shadow: 5px 15px 25px var(--middlewhite);
+        cursor: pointer;
+        margin-bottom: 6rem;
+        img {
+            width: 100%;
+            transition: all 500ms ease-out;
+            margin: 5px auto;
+     
+        }
+        .capa{
+            padding-top: 10rem;
+        h5{
+        font-size: 1.5rem;
+        color: var(--black);
+        font-weight: 400;
+        }
+        position: absolute;
+        top:0%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.60);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        button{
+            border-radius: 2px;
+            background-color: var(--middlewhite);
+            border: 2px solid var(--white);
+            width: 10rem;
+            a {
+                text-decoration: none;
+                color: var(--black);
+            }
+        }
+        }
+        &:hover > .capa{
+            opacity: 1;
+       visibility: visible;
+        }
+        }
+    
+       }
+    }
+}
+/*Seccion 6 */
+.ruedadepremios{
+    background-color: var(--blue);
+    .rueda-fondo{
+        width: 100%;
+        height: 600px;
+        }
+    .rueda-main{
+        position: relative;
+        bottom: 500px;
+        color: var(--white);
+        height: 450px;
+        h3{
+            font-size: 6rem;
+            margin-left: 5rem;
+            width: 20rem;
+            font-weight: 300;
+            }
+            h5{
+                font-size: 3rem;
+                margin-left: 5rem;
+                width: 25rem;
+                font-weight: 200;
+                }
+        figure{
+            img{
+                width: 35rem;
+            }
+        }
+    }
+    .rueda-main-2{
+        background-color: $middlewhite; 
+        div{
+            h4{
+                font-size: 4rem;
+                width: 25rem;
+                margin: auto;
+                font-weight: 300;
+                padding-bottom: 3rem;
+                line-height: 1.5;
+            }
+            p{
+                font-size: 2.5rem;
+                width: 25rem;
+                margin: auto;
+                font-weight: 200;
+            }
+        }
+        img{
+            width: 30rem;
+            padding-top: 3rem;
+        }
+    }
+  
+   
+
+}
+.rueda-premios{
+    background-color: $middlewhite;
+    h3{
+        font-size: 3rem;
+        font-weight: 300;
+        width: 28rem;
+        margin: auto;
+        padding-bottom: 4rem;
+    }
+    img {
+        width: 25rem;
+        margin: 10px 25px;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px;
+        
+    }
+   padding-bottom: 4rem;
+
+}
+.rueda-premios-info{
+    width: 100%;
+    background-color: $blue;
+    color: $white;
+    padding-bottom: 15rem;
+    h3{
+        padding-top: 5rem;
+        font-weight: 300;
+        padding-bottom: 4rem;
+        font-size: 3rem;
+        width: 300px;
+    }
+    p {
+        font-size: 2rem;
+        font-weight: 200;
+        width: 300px;
+        margin-bottom: 5rem;
+    }
+    img {
+        width: 30rem;
+        margin: 5px 1rem;
+        border-radius: 10px;
+        margin-bottom:1rem;
+        box-shadow: 2px 2px 2px;
+    }
+}
+ 
+/* seccion 4 */
+.inversionescripto{
+    background-color: $white;
     padding-top: 5rem;
     .inversionescripto-1{
-        background-color: var(--blue);
+        background-color: $blue;
         height: 650px;
         grid-template-columns: auto;
         grid-template-rows: repeat(2,auto);
         grid-template-areas: "inversiones-foto" "inversiones-texto";
         justify-items: center;
         align-items: center;
-        color: var(--white);
-        .inversiones-foto{
+        color: $white;
+        
+        .inversiones-foto {
             img{
-                width: 30rem;
+                width: 34rem;
             }
         }
         .inversiones-texto{
             h3{
-                font-size: 4rem;
+                font-size: 3.2rem;
+                margin: 2px auto;
             }
             h5{
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 padding-top: 2rem;
-            padding-bottom: 4rem;
+                padding-bottom: 4rem;
+                opacity: 0.9;
+                margin: 2px auto;
+                width: 88%;
             }
         }
     }
     .inversionescripto-2{
         h3{
-         font-size: 3rem;
-         margin-top: 2rem;
+            font-size: 3rem;
+            margin-top: 2rem;
         }
-        .foto-cripto{
-         display: flex;
-         margin-top: 3rem;
-         flex-direction: column;
-         .foto-cripto-1 , .foto-cripto-2, .foto-cripto-3, .foto-cripto-4{
-             width: 24rem;
-             margin: 40px auto;
-             background-color: var(--white);
-             border-radius: 2rem;
-             display: flex;
-             flex-direction: column;
-             box-shadow: 10px 15px 15px var(--middlewhite);
+        div{
+            display: flex;
+             margin-top: 3rem;
+            flex-direction: column;
+            div{
+                width: 24rem;
+                margin: 40px auto;
+                background-color: var(--white);
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 10px 15px 15px var(--middlewhite);
+                img{
+                    background-color: #eee8f7;;
+                    border-radius: 15rem;
+                    width: 11rem;
+                    margin-top: 5rem;
+                }
+                h4{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 12px;
+                    opacity: 0.85;
+                    padding-top: 2rem;
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+    }
+    .inversionescripto-3{
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: "inversionescripto-3-h3" "foto-cripto-5" "foto-cripto-6";
+        h3{
+            width: 100%;
+            font-size: 4rem;
          
          }
-         img{
-             background-color: #eee8f7;;
-             border-radius: 15rem;
-             width: 11rem;
-             margin-top: 5rem;
+        .foto-cripto-5{
+            ul{
+                list-style: none;
+                li{
+                    font-size: 1.8rem;
+                    padding-top: 4rem;
+                }
+            }
          }
-         h4{
-             font-size: 2rem;
-         }
-         p{
-             font-size: 12px;
-             opacity: 0.85;
-             padding-top: 2rem;
-             padding-bottom: 3rem;
-         }
-     
+         .foto-cripto-6 {
+            width: 30rem;
+            padding-top: 3rem;
+            margin: 5px auto;
+            margin-bottom: 10rem;
+        }
      }
-    
-   }
-   .inversionescripto-3{
-    display: grid;
-    grid-template-rows: repeat(3,auto);
-    grid-template-areas: "inversionescripto-3-h3" "foto-cripto-5" "foto-cripto-6";
+}
+/* seccion 5 */
+.canalesdecontacto{
+    background-color: rgba(114, 11, 194, 0.9);
+    color: $white;
     h3{
-        width: 100%;
-        font-size: 4rem;
+        font-size: 3rem;
+        padding-top: 15rem;
+        background-color: var(--middlewhite);
+        color: var(--blue);
     }
-    ul{
-        list-style: none;
-        li{
-            font-size: 1.8rem;
-            padding-top: 4rem;
+    h5{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-weight: 300;
+    }
+    .formulario{
+        form{
+            width: 20rem;
+            margin:2px auto;
+            div{
+                label{
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+                input{
+                    border: 3px solid var(--middlewhite);
+                    width: 20rem;
+                    margin-bottom: 2rem;
+                 }
+                 select {
+                    margin-bottom: 4rem;
+                }
+                textarea{
+                    border: 3px solid var(--middlewhite);
+                    width: 100%
+                 }
+                 
+            }
+            div{
+
+                .formulario-boton{
+                    background-color: var(--middlewhite);
+                    border-radius: 5px;
+                    width: 100%;
+                    margin-top: 2rem;
+                }
+            }
         }
     }
-    .foto-cripto-6 {
-        width: 30rem;
-        padding-top: 3rem;
-        margin: 5px auto;
-        margin-bottom: 10rem;
-    }
-   }
-   
-   }
-
+}
 
 
 
@@ -582,154 +1185,595 @@ header{
         }
        
     }
+    
     /* seccion 1*/
     .inicio{
-        h4,h5{
-            display: none;
-        }
+        width: 99%;
+        height: 1000px;
         .inicio-1{
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-            grid-template-areas: "foto-inicio-mobile" "inicio-textos" ".""foto-inicio-descarga";
-            .foto-inicio-mobile{
-                width: 60rem;
-                margin-top: 10rem;
-            }
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "inicio-texto" "foto-inicio-mobile" "foto-inicio-descarga";
+            height: 1500px;
             .inicio-textos{
-                h1 {
-                    font-size: 9rem;
-                    margin-top: 20rem;
+                margin: 5px auto;
+                h1{
+                    justify-self: center;
+                    margin-top: 15rem;
+                    font-size: 8rem;
+                    width: 70%;
                     font-weight: 400;
                 }
-                p {
-                    font-size: 3.3rem;
-                    margin-top: 5rem;
+                h4,h5{
+                    font-size: 5rem;
+                    width: 65%;
                     font-weight: 300;
-                    display: block;
-                    width: 600px;
-                    color: var(--white);
-                    margin-left: 15rem;
                 }
             }
+            .foto-inicio-mobile{
+                width: 59rem;
+                position: relative;
+                bottom: 51rem;
+                left: 50rem;
+            }
             .foto-inicio-descarga{
-                grid-template-columns: repeat(3,auto);
-                top: 40rem;
+                grid-template-columns: repeat(3,1fr);
+                top: 30rem;
                 justify-content: center;
-                column-gap: 5px;
-                cursor: pointer;
-                right: 16rem;
-                img{
-                    width: 17rem;
-                    margin-left: 5rem;
-                   transition: width 1s;
-                   &:hover{
+            img{
+                margin-left: 30rem;
+                width: 20rem;
+                &:hover{
                     width: 25rem;
+                    opacity: 0.9;
                 }
-                }
-        
-             }
-        
+            }
+            column-gap: 2rem;
+            cursor: pointer;
+            width: 500px;
+            }
         }
-    }
-    .funciones{
+}
+.funciones{
+        background-image: linear-gradient(white, #780ca3);
         h3{
-            font-size: 5rem;
-            color: var(--black);
-            margin-bottom: 4rem;
+            font-size: 6rem;
+            color: $black;
+            padding-bottom: 5rem;
         }
         .funciones-foto{
             flex-direction: row;
-            margin: auto;
-            width: 80%; 
+            margin: 1rem auto;
+            justify-content: center;
+            width: 95%;
+            h5{
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-left: 3rem;
+                margin-bottom: 3rem;
+            }
+            p{
+                font-size: 1.5rem;
+                opacity: 0.88;
+         
+            }
             img{
                 width: 15rem;
+                margin-right: 3rem;
                 margin-top: 3rem;
                }
-            .funciones-foto-1,.funciones-foto-2, .funciones-foto-3, .funciones-foto-4, .funciones-foto-5{
-                margin-top: 6rem;
-                box-shadow: 4px 8px 8px var(--middlewhite);
-                width: 400px;
-                height: 350px;
-                margin-right: 15rem;
-            }
             .funciones-foto-1{
                 img{
                     width: 11rem;
                 }
             }
-            h5{
-                font-size: 2.5rem;
-                font-weight: bold;
-                margin-bottom: 3rem;
-                opacity: 0.9;
-                margin-top: 2rem;
+            .funciones-foto-5{
+                img{
+                    width: 18rem;
+                }
             }
-            p{
-                font-size: 1.5rem;
-                opacity: 0.80;
-         
+            .funciones-foto-1,.funciones-foto-2, .funciones-foto-3, .funciones-foto-4, .funciones-foto-5{
+                margin-top: 6rem;
+                margin-left: 3rem;
+                box-shadow: 4px 8px 8px var(--middlewhite);
+                border-radius: 10px;
+                width: 400px;
+                height: 350px;
             }
             
         }
-    }
-    .prextamo{
-        display: grid;
-        grid-template-columns: auto auto;
-        .prextamo-foto{
-            figure{
-                img {
-                    width: 50rem;
-                }
-            }
-            h3 {
-                display: none;
-            }
-        }
-        .prextamo-texto{
-            h3{
-                display: block;
-                color: var(--white);
-            }
-            .prextamo-texto-1 {
-                margin-right: 3rem;
-            }
-        }
-    }
-    /* seccion 2 */
-    .tarjeta{
+}
+.prextamo{
+    .prextamo-foto{
         h3{
             font-size: 6rem;
-            margin-top: auto;
+            font-weight: 300;
+            color: $black;
+        }
+        figure{
+            img{
+            display: none;
+            }
+        }
+    }
+    .prextamo-funcion{
+        h3{
+            font-size: 5rem;
+            padding-top: 4rem;
         }
         h5{
             font-size: 3rem;
-            margin: auto;
         }
-        .grid-container{
-            display:grid;
-            grid-template-columns: repeat(3,auto);
+        div{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 96%;
+            margin: 2rem auto;
+            div{
+               img{
+                   width: 34rem;
+               }
+               h5{
+                   font-size: 3rem;
+               }
+               display: flex;
+               flex-direction: column;
+            }
         }
-        .container-2{
-            h3{
-                font-size: 5rem;
-                margin: auto;
-                margin-top: 6rem;
+    }
+    .prextamo-preguntas{
+        padding-bottom: 10rem;
+        div{
+            div{
+                img{
+                    width: 2.1rem;
+                }
+            }
+        }
+    }
+}
+.tarjeta{
+    .grid-container{
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+    }
+    h3{
+        margin-top: auto;
+        font-size: 7rem;
+    }
+    h5{
+        font-size: 5rem;
+        margin: auto;
+    }
+    padding-bottom: 10rem;
+}
+.container-2{
+    h3{
+        font-size: 6rem;
+        margin: auto;
+        margin-top: 6rem;
+        padding-top: 4rem;
+        color: $middlewhite;
+        
+    }
+    h5{
+        display: block;
+        font-size: 2rem;
+        width: 600px;
+        margin: auto;
+        padding-bottom: 4rem;
+        color: $middlewhite;
+       }
+}
+.container-2-foto{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .container-2-foto-1, .container-2-foto-2{
+        width: 96%;
+        margin-bottom: 30px;
+        background-color: var(--white);
+        img {
+            width: 50rem;
+            margin-top: 3rem;
+            margin-right: 8rem;
+        }
+        p{
+            font-size: 2.5rem;
+            padding-top: 3rem;
+        }
+       
+    }
+}
+.internacional{
+    width: 95%;
+    background-color: $white;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    .internacional-textos{
+        h3{
+            font-size: 5rem;
+            color: $white;
+        }
+        h5{
+            font-size: 3rem;
+            opacity: 0.8;
+        }
+    }
+    .internacional-cambio{
+        
+        aside{
+            p{
+                font-size: 3rem;
             }
             h5{
-                display: block;
+                font-size: 3rem;
+                font-weight: 300;
+            }
+            select{
+                height: 5rem;
+                width: 75%;
                 font-size: 2rem;
-                width: 600px;
-                margin: auto;
+                margin: 5px auto;
+            }
+            input{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            .internacional-extra{
+                p{
+                    font-size: 2rem;
+                    padding-bottom: 4rem;
+                }
+                img{
+                    width: 3rem;
+                }
             }
         }
-        .container-2-foto{
+    }
+}
+article{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin-top: 5rem;
+    .internacional-1{
+        h5{
+            font-size: 7rem;
+        }
+        h3{
+            font-size: 15rem;
+        }
+    }
+    .internacional-2{
+        h3{
+            font-size: 5rem;
+        }
+        h5{
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+    }
+    p{
+        font-size: 2rem;
+        opacity: 0.6;
+    }
+    
+
+}
+.rapid{
+    h3{
+        display: none;
+    }
+}
+.internacional-comision-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 6rem;
+    div{
+        height: 100%;
+        box-shadow: 2px 3px 5px $grey;
+        border-radius: 1rem;
+        p{
+            width: 90%;
+            font-size: 1.5rem;
+        }
+        h5{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        img{
+            width: 7rem;
+        }
+    }
+}
+.internacional-comision-3{
+    padding-top: 4rem;
+    h3{
+        font-size: 5rem;
+    }
+    .internacional-comision-3-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        .grid-1{
+            div{
+                h3{
+                    margin-left: 1rem;
+                    border-radius: 2rem;
+                    width: 6%;
+                    border: 1px solid $blue;
+                }
+                h5{
+                    font-size: 2.5rem;
+                }
+                margin-top: 5rem;
+            }
+            width: 90%;
+            margin: 1rem auto;
+        }
+        .grid-2{
+            img{
+                width: 36rem;
+                padding-bottom: 4rem;
+                
+            }
+        }
+    }
+}
+/* mas de la tarjeta */
+.payo {
+    display: grid;
+    grid-template-columns: auto auto;
+    .payo-fotos{
+        figure{
+            img {
+                width: 40rem;
+            }
+        }
+    }
+    .payo-texto{
+        h3{
+            width: 50rem;
+            font-size: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+    .payo-background{
+        figure{
+            img {
+                width: 60rem;
+            }
+        }
+    }
+}
+.payo-2{
+    h3{
+        font-size: 6rem;
+        width: 80rem;
+        margin: 10px auto;
+    }
+    p {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    
+}
+   
+    /* seccion 3*/
+    .beneficiosypromociones{
+        width: 100%;
+        padding-top: 5rem;
+        h3{
+            font-size: 7rem;
+            background-color: var(--blue);
+            color: var(--white);
+            margin: 10px auto;
+        }
+        .promocion-foto{
+            h4{
+                padding-top: 2rem;
+                font-size: 6rem;
+            }
+            p {
+                padding-top: 2rem;
+                font-size: 3rem;
+                
+            }
+            img {
+                width: 110rem;
+                margin-top: 3rem;
+                
+            }
+        }
+        .foto-beneficios{
             flex-direction: row;
-            align-items: center;
             justify-content: center;
+            margin-top: 5rem;
+        }
+    }
+    /* seccion 6*/
+    .ruedadepremios{
+        .rueda-main{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-template-rows: repeat(2,auto);
+            grid-template-areas: "rueda-main-h3" "rueda-main-h5" ;
+            height: 100px;
+            bottom: 400px;
+            h3{
+                width: 600px;
+                font-size: 8rem;
+                font-weight: 200;
+                justify-self: flex-end;
+                padding-left: 7rem;
+            }
+            h5{
+                width: 600px;
+                font-size: 5rem;
+                font-weight: 200;
+                justify-self: flex-end;
+                padding-left: 7rem;
+            }
+            figure{
+                position: relative;
+                bottom: 45rem;
+                img {
+                    width: 45rem;
+                }
+            }
+        }
+        .rueda-main-2 {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            padding-top: 10rem;
+            div{
+                h4{
+                    width: 600px;
+                    font-size: 4rem;
+                    margin-top: 10rem;
+            
+                }
+                p{
+                    width: 600px;
+                    font-size: 2rem;
+                }
+            }
+            img {
+                width: 50rem;
+                justify-self: center;
+            }
+        }
+        
+    }
+    .rueda-premios{
+        h3{
+            font-size: 5rem;
+            font-weight: 200;
+            width: 100%;
+        }
+        img {
+            width: 25rem;
+            margin: 15px 120px;
+            
+        }
+    }
+   .rueda-premios-info{
+    h3{
+        width: 60rem;
+        font-size: 5rem;
+        margin: auto;
+    }
+    p{
+        width: 600px;
+        font-size: 3rem;
+        margin: auto;
+
+    }
+    img{
+        width: 500px;
+        margin: 2rem 10rem;
+    }
+   }
+   /* seccion 4 */
+   .inversionescripto{
+    .inversionescripto-1{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto;
+        grid-template-areas: "inversiones-texto" "inversiones-foto";
+        height: 50rem;
+        .inversiones-texto{
+            h3{
+                font-size: 6rem;
+                width: 60rem;
+                padding-top: 6rem;
+            
+        }
+        h5{
+            font-size: 2rem;
+            width: 60rem;
+        }
+        
+    }
+    .inversiones-foto{
+        img{
+            width: 55rem;
+            position: relative;
+            bottom: 35rem;
+            left: 60rem;
         }
     }
 
+   }
+   .inversionescripto-2{
+    h3{
+        font-size: 5rem;
+        margin: 3rem 25rem;
+    }
+    div{
+        flex-direction: row;
+    }
+   }
+   .inversionescripto-3{
+        grid-template-rows: auto;
+    .foto-cripto-5{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-items: center;
+            ul{
+                margin-top: 5rem;
+                
+                li{
+                    font-size: 3rem;
+    
+                }
+            }
+    }
+    .foto-cripto-6{
+        width: 40rem;
+        margin-top: 2rem;
+    }
+   }
+}
+     /* seccion 5*/
+
+     .canalesdecontacto{
+         h3{
+             font-size: 7rem;
+         }
+         h5{
+             font-size: 3rem;
+         }
+         p{
+             font-size: 2rem;
+             font-weight: 400;
+             width: 800px;
+            margin: 10px auto;
+         }
+         .formulario{
+            form{
+                width: 70%;
+                margin: 50px auto;
+                div{
+                    input,select{
+                        width: 100%;
+                        height: 25px;
+                    }
+                    label {
+                        font-size: 2rem;
+                    }
+            
+                }
+                div{
+                    .formulario-boton{
+                        width: 500px;
+                        height: 25px;
+                        margin: 3rem auto;
+                        
+                    }
+                }
+            }
+         }
+         
+     }
 
 
     /* footer*/
@@ -780,6 +1824,4 @@ header{
     }
    
 }
-
-
 
