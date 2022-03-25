@@ -132,7 +132,7 @@ header {
     margin-left: 9rem; }
   /* Seccion 1*/
   .inicio {
-    background-color: var(--white);
+    background-color: #ffffff;
     background-image: linear-gradient(#6409ab, #780ca3, white); }
     .inicio .inicio-1 {
       grid-template-columns: auto;
@@ -145,7 +145,7 @@ header {
         margin-top: 3rem; }
         .inicio .inicio-1 .inicio-textos h1 {
           font-size: 3.3rem;
-          color: var(--white);
+          color: #ffffff;
           margin-bottom: 2rem;
           margin-top: 5rem;
           font-weight: 400; }
@@ -153,11 +153,11 @@ header {
           display: none; }
         .inicio .inicio-1 .inicio-textos h4 {
           font-size: 1.4rem;
-          color: white;
+          color: #ffffff;
           font-weight: 200; }
         .inicio .inicio-1 .inicio-textos h5 {
           font-size: 1.4rem;
-          color: white;
+          color: #ffffff;
           font-weight: 200; }
       .inicio .inicio-1 .foto-inicio-descarga {
         flex-direction: column;
@@ -171,10 +171,10 @@ header {
         margin-top: 4rem; }
   .funciones {
     margin-top: 35rem;
-    background-color: var(--white); }
+    background-color: #ffffff; }
     .funciones h3 {
       font-size: 3rem;
-      color: var(--black);
+      color: #000000;
       font-weight: 300; }
     .funciones .funciones-foto {
       width: 300px;
@@ -195,7 +195,7 @@ header {
       width: 19rem; }
     .funciones .funciones-foto-1, .funciones .funciones-foto-2, .funciones .funciones-foto-3, .funciones .funciones-foto-4, .funciones .funciones-foto-5 {
       margin-top: 6rem;
-      box-shadow: 4px 8px 8px var(--middlewhite);
+      box-shadow: 4px 8px 8px #ecedef;
       border-radius: 10px; }
   .prextamo {
     background-color: #ecedef;
@@ -283,7 +283,7 @@ header {
         background: #ffffff;
         border-radius: 1rem; }
         .tarjeta .grid-container .container .paso1 h5, .tarjeta .grid-container .container .paso2 h5, .tarjeta .grid-container .container .paso3 h5 {
-          color: var(--violet);
+          color: #400056;
           margin-bottom: 2rem;
           font-size: 2rem;
           margin-left: 4rem;
@@ -295,7 +295,7 @@ header {
         .tarjeta .grid-container .container .paso1 p, .tarjeta .grid-container .container .paso2 p, .tarjeta .grid-container .container .paso3 p {
           font-size: 2.5rem;
           margin-top: 7rem;
-          color: var(--violet);
+          color: #400056;
           font-weight: 400; }
         .tarjeta .grid-container .container .paso1 .adelante, .tarjeta .grid-container .container .paso1 .atras, .tarjeta .grid-container .container .paso2 .adelante, .tarjeta .grid-container .container .paso2 .atras, .tarjeta .grid-container .container .paso3 .adelante, .tarjeta .grid-container .container .paso3 .atras {
           width: 100%;
@@ -309,14 +309,17 @@ header {
           transform: rotateY(180deg); }
       .tarjeta .grid-container .container .paso2 img {
         width: 27rem; }
+  .container-2 h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem; }
   .container-2-foto {
     flex-direction: column;
-    background-color: var(--white); }
+    background-color: #ffffff; }
     .container-2-foto img {
       width: 30rem; }
     .container-2-foto .container-2-foto-1, .container-2-foto .container-2-foto-2 {
       margin-bottom: 30px;
-      background-color: var(--white); }
+      background-color: #ffffff; }
       .container-2-foto .container-2-foto-1 p, .container-2-foto .container-2-foto-2 p {
         color: var(--violet);
         font-size: 1.7rem; }
@@ -403,7 +406,7 @@ header {
       margin-top: 1.5rem;
       opacity: 0.88; }
   .rapid h3 {
-    color: black;
+    color: #000000;
     font-size: 2rem;
     margin-top: 4rem; }
   .internacional-comision-2 {
@@ -482,7 +485,7 @@ header {
     .payo .payo-background figure img {
       width: 30rem; }
   .payo-2 {
-    background-color: var(--middlewhite);
+    background-color: #ecedef;
     padding-bottom: 20rem; }
     .payo-2 h3 {
       font-size: 3rem; }
@@ -496,7 +499,7 @@ header {
       display: flex;
       flex-direction: column; }
       .payo-2 .payo-2-cards .payo-2-card {
-        background-color: var(--white);
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
         width: 30rem;
@@ -504,9 +507,9 @@ header {
         padding-top: 4rem;
         border-radius: 8px;
         margin-bottom: 2rem;
-        border: 0.3px solid var(--grey); }
+        border: 0.3px solid #c2c5cc; }
         .payo-2 .payo-2-cards .payo-2-card h4 {
-          color: var(--blue);
+          color: #720bc2;
           font-size: 2rem;
           margin-left: 5rem; }
         .payo-2 .payo-2-cards .payo-2-card p {
@@ -521,8 +524,8 @@ header {
     padding-top: 5rem; }
     .beneficiosypromociones h3 {
       font-size: 3rem;
-      background-color: var(--blue);
-      color: var(--white);
+      background-color: #720bc2;
+      color: #ffffff;
       margin: 10px auto;
       padding-top: 5rem; }
     .beneficiosypromociones .promocion-foto h4 {
@@ -548,7 +551,7 @@ header {
           height: 250px;
           width: 255px;
           overflow: hidden;
-          box-shadow: 5px 15px 25px var(--middlewhite);
+          box-shadow: 5px 15px 25px #ecedef;
           cursor: pointer;
           margin-bottom: 6rem; }
           .beneficiosypromociones .foto-beneficios .fotos-bene figure img {
@@ -568,29 +571,29 @@ header {
             text-align: center; }
             .beneficiosypromociones .foto-beneficios .fotos-bene figure .capa h5 {
               font-size: 1.5rem;
-              color: var(--black);
+              color: #000000;
               font-weight: 400; }
             .beneficiosypromociones .foto-beneficios .fotos-bene figure .capa button {
               border-radius: 2px;
-              background-color: var(--middlewhite);
-              border: 2px solid var(--white);
+              background-color: #ecedef;
+              border: 2px solid #ffffff;
               width: 10rem; }
               .beneficiosypromociones .foto-beneficios .fotos-bene figure .capa button a {
                 text-decoration: none;
-                color: var(--black); }
+                color: #000000; }
           .beneficiosypromociones .foto-beneficios .fotos-bene figure:hover > .capa {
             opacity: 1;
             visibility: visible; }
   /*Seccion 6 */
   .ruedadepremios {
-    background-color: var(--blue); }
+    background-color: #720bc2; }
     .ruedadepremios .rueda-fondo {
       width: 100%;
       height: 600px; }
     .ruedadepremios .rueda-main {
       position: relative;
       bottom: 500px;
-      color: var(--white);
+      color: #ffffff;
       height: 450px; }
       .ruedadepremios .rueda-main h3 {
         font-size: 6rem;
@@ -692,11 +695,11 @@ header {
       .inversionescripto .inversionescripto-2 div div {
         width: 24rem;
         margin: 40px auto;
-        background-color: var(--white);
+        background-color: #ffffff;
         border-radius: 2rem;
         display: flex;
         flex-direction: column;
-        box-shadow: 10px 15px 15px var(--middlewhite); }
+        box-shadow: 10px 15px 15px #ecedef; }
         .inversionescripto .inversionescripto-2 div div img {
           background-color: #eee8f7;
           border-radius: 15rem;
@@ -733,8 +736,8 @@ header {
     .canalesdecontacto h3 {
       font-size: 3rem;
       padding-top: 15rem;
-      background-color: var(--middlewhite);
-      color: var(--blue); }
+      background-color: #ecedef;
+      color: #720bc2; }
     .canalesdecontacto h5 {
       font-size: 1.5rem;
       padding-top: 1rem; }
@@ -750,23 +753,23 @@ header {
         font-size: 1.5rem;
         font-weight: 400; }
       .canalesdecontacto .formulario form div input {
-        border: 3px solid var(--middlewhite);
+        border: 3px solid #ecedef;
         width: 20rem;
         margin-bottom: 2rem; }
       .canalesdecontacto .formulario form div select {
         margin-bottom: 4rem; }
       .canalesdecontacto .formulario form div textarea {
-        border: 3px solid var(--middlewhite);
+        border: 3px solid #ecedef;
         width: 100%; }
       .canalesdecontacto .formulario form div .formulario-boton {
-        background-color: var(--middlewhite);
+        background-color: #ecedef;
         border-radius: 5px;
         width: 100%;
         margin-top: 2rem; }
   /* footer */
   .footer {
-    background-color: var(--middlewhite);
-    color: var(--violet); }
+    background-color: #ecedef;
+    color: #400056; }
     .footer .footer-container {
       grid-template-columns: repeat(2, 160px);
       column-gap: 50px;
@@ -777,7 +780,7 @@ header {
       .footer .footer-container .grid-1 .container-redes li, .footer .footer-container .grid-1 .container-nosotros li, .footer .footer-container .grid-1 .container-carreras li {
         list-style: none; }
         .footer .footer-container .grid-1 .container-redes li a, .footer .footer-container .grid-1 .container-nosotros li a, .footer .footer-container .grid-1 .container-carreras li a {
-          color: var(--black);
+          color: #000000;
           font-size: 1rem;
           text-decoration: none; }
       .footer .footer-container .grid-2 .fotos-footer .foto-footer-1 {
@@ -893,7 +896,7 @@ header {
       .funciones .funciones-foto .funciones-foto-1, .funciones .funciones-foto .funciones-foto-2, .funciones .funciones-foto .funciones-foto-3, .funciones .funciones-foto .funciones-foto-4, .funciones .funciones-foto .funciones-foto-5 {
         margin-top: 6rem;
         margin-left: 3rem;
-        box-shadow: 4px 8px 8px var(--middlewhite);
+        box-shadow: 4px 8px 8px #ecedef;
         border-radius: 10px;
         width: 400px;
         height: 350px; }
@@ -940,14 +943,14 @@ header {
     margin: auto;
     margin-top: 6rem;
     padding-top: 4rem;
-    color: #ecedef; }
+    color: #000000; }
   .container-2 h5 {
     display: block;
     font-size: 2rem;
     width: 600px;
     margin: auto;
     padding-bottom: 4rem;
-    color: #ecedef; }
+    color: #000000; }
   .container-2-foto {
     flex-direction: row;
     align-items: center;
@@ -1206,7 +1209,7 @@ header {
       margin: 3rem auto; }
   /* footer*/
   .footer {
-    background-color: var(--middlewhite); }
+    background-color: #ecedef; }
     .footer .footer-container {
       grid-template-columns: repeat(2, auto); }
       .footer .footer-container .grid-1 {
