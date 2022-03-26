@@ -149,12 +149,15 @@ header{
     grid-area: rueda-main-foto;
 }
 @media(min-width:320px){
+    html,body{
+        overflow-x: hidden;
+    }
     
     header{
         grid-template-columns: auto auto;
         grid-template-rows:auto auto;
         grid-template-areas: "header-icon" "nav";
-        background-color: var(--white);
+        background-color: $white;
         position: fixed;
         @include sizes(100%,5rem );
         z-index: 1;
@@ -176,6 +179,7 @@ header{
             .logo{
                 width: 10rem;
                 padding-top: 1rem;
+                margin-left: 1rem;
             }
         }
         .burgermenu{
@@ -1133,9 +1137,9 @@ article{
         }
         .footer-final{
             p{
-                width: 80%;
                 font-size: 1rem;
                 font-weight: 400;
+                width: 80%;
             }
         }
     }
@@ -1823,9 +1827,14 @@ article{
                     }
                 }
             }
-            .footer-final p{
+             
+        }
+        .footer-final{
+            p{
                 width: 100%;
-                font-size: 1rem;
+                font-size: 1.5rem;
+                opacity: 0.8;
+                padding-bottom: 2rem;
             }
         }
     }

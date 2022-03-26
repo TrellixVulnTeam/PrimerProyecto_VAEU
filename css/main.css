@@ -108,11 +108,13 @@ header {
   grid-area: rueda-main-foto; }
 
 @media (min-width: 320px) {
+  html, body {
+    overflow-x: hidden; }
   header {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "header-icon" "nav";
-    background-color: var(--white);
+    background-color: #ffffff;
     position: fixed;
     width: 100%;
     height: 5rem;
@@ -125,7 +127,8 @@ header {
         margin-left: 1rem; }
   .header-icon a .logo {
     width: 10rem;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    margin-left: 1rem; }
   .header-icon .burgermenu {
     width: 3rem;
     padding-top: 1rem;
@@ -788,9 +791,9 @@ header {
         .footer .footer-container .grid-2 .fotos-footer .foto-footer-1 img {
           width: 3.5rem; }
       .footer .footer-container .footer-final p {
-        width: 80%;
         font-size: 1rem;
-        font-weight: 400; } }
+        font-weight: 400;
+        width: 80%; } }
 
 @media (min-width: 1024px) {
   header {
@@ -1226,6 +1229,8 @@ header {
       .footer .footer-container .grid-2 .fotos-footer .foto-footer-1 img {
         margin-bottom: 1.5rem;
         width: 6rem; }
-      .footer .footer-container .footer-final p {
-        width: 100%;
-        font-size: 1rem; } }
+    .footer .footer-final p {
+      width: 100%;
+      font-size: 1.5rem;
+      opacity: 0.8;
+      padding-bottom: 2rem; } }
